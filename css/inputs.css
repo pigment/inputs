@@ -84,34 +84,6 @@ a.button:active {
   color: #b0b0b0;
 }
 
-/* CTA */
-input.button.cta,
-a.button.cta:link, a.button.cta:visited {
-  background: #309936;
-  background: -webkit-gradient(linear, left top, left bottom, from(#78ce7e), to(#309936), color-stop(5%, #41ad49));
-  background-image: -moz-linear-gradient(top,  #41ad49,  #309936);
-  
-  -pie-background: linear-gradient(#78ce7e, #309936);
-  
-  border-color: #25632a;
-  
-  color: #fff;
-  text-shadow: 0 1px 0 rgba(0,0,0, 0.4);
-}
-
-/* WARNING */
-input.button.warning,
-a.button.warning:link, a.button.warning:visited {
-  background: #993030;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ce7878), to(#993030), color-stop(5%, #ad4141));
-  -pie-background: linear-gradient(#ce7878, #993030);
-  
-  border-color: #632525;
-  
-  color: #fff;
-  text-shadow: 0 1px 0 rgba(0,0,0, 0.4);
-}
-
 /* SMALL */
 
 input[type=submit].small,
@@ -129,6 +101,11 @@ input[type=submit].small {
 }
 
 /* ICONS */
+
+/*
+TO DO:
+Sort out all of the below */
+
 a.button.small.with-icon {
   padding: 2px 11px 2px 4px;
 }
