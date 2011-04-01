@@ -1,0 +1,197 @@
+/*
+ * Form
+ * Nice form elements & buttons */
+
+input::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
+
+/* Styles input types including the new HTML5 ones - email, url etc... */
+input,
+textarea {
+  font-size: 1em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  
+  /* Avoid shorthand for padding - IE bug: http://prax.is/misc/ie8-bug-css-padding-input-element.html */
+  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+  border: 1px solid #ccc;
+  border-top: 1px solid #aaa;
+  
+  background: #fcfcfc;
+  color: #aaa;
+}
+textarea {
+  /* Prevents FX4 resize handle from 'floating' */
+  padding-bottom: 0;
+}
+input:focus, textarea:focus {
+  background: #fff;
+  color: #444;
+}
+
+input[type=submit],
+button,
+a.button:link, a.button:visited {
+  width: auto;
+  display: inline-block;
+  
+  overflow: hidden;
+  text-decoration: none;
+  height: 30px;
+  
+  background: #f3f3f3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#e6e6e6));
+  background-image: -moz-linear-gradient(top,  #fcfcfc,  #e6e6e6);
+  -pie-background: linear-gradient(#fcfcfc, #e6e6e6);
+  
+  padding: 0 32px;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  border: 1px solid #828282;
+  
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255, 1);
+  
+  /* REMEMBER IE STYLES ie.css */
+}
+input[type=submit],
+button {
+  /* Submit button height includes borders */
+  height: 32px;
+}
+input[type=submit]:hover,
+button:hover,
+a.button:hover {
+  background: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
+  background-image: -moz-linear-gradient(top,  #fff,  #efefef);
+  -pie-background: linear-gradient(#fff, #efefef);
+  
+  border-color: #666;
+  
+  color: #000;
+}
+input[type=submit]:active,
+button:active,
+a.button:active {
+  background: #f9f9f9;
+  border-color: #999;
+  color: #b0b0b0;
+}
+
+/* CTA */
+input.button.cta,
+a.button.cta:link, a.button.cta:visited {
+  background: #309936;
+  background: -webkit-gradient(linear, left top, left bottom, from(#78ce7e), to(#309936), color-stop(5%, #41ad49));
+  background-image: -moz-linear-gradient(top,  #41ad49,  #309936);
+  
+  -pie-background: linear-gradient(#78ce7e, #309936);
+  
+  border-color: #25632a;
+  
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0, 0.4);
+}
+
+/* WARNING */
+input.button.warning,
+a.button.warning:link, a.button.warning:visited {
+  background: #993030;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ce7878), to(#993030), color-stop(5%, #ad4141));
+  -pie-background: linear-gradient(#ce7878, #993030);
+  
+  border-color: #632525;
+  
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0, 0.4);
+}
+
+/* SMALL */
+
+input[type=submit].small,
+a.button.small {
+  height: auto;
+  padding: 2px 11px;
+  
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+input[type=submit].small {
+  height: 22px;
+}
+
+/* ICONS */
+a.button.small.with-icon {
+  padding: 2px 11px 2px 4px;
+}
+input[type=submit].with-icon {
+  padding-left: 24px;
+}
+a.button i {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background: transparent url(icons.png) no-repeat;
+}
+a.button.new i {
+  background-position: -8px -8px;
+}
+a.button.new:active i {
+  background-position: -8px -72px;
+}
+a.button.delete i {
+  background-position: -8px -104px;
+}
+a.button.delete:active i {
+  background-position: -8px -168px;
+}
+input[type=submit].delete:hover,
+a.button.delete:hover {
+  color: #900;
+}
+a.button.delete:active,
+input[type=submit].delete:active {
+  color: #b0b0b0;
+}
+input[type=submit].delete {
+  background:
+    url(icons.png) no-repeat -4px -102px,
+    -webkit-gradient(linear, left top, left bottom,
+      from(#fcfcfc),
+      to(#e6e6e6));
+  background:
+    url(icons.png) no-repeat -4px -102px,
+    -moz-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+}
+input[type=submit].delete:active {
+  background: #f9f9f9 url(icons.png) no-repeat -4px -166px;
+}
+
+input[type=submit].like {
+  background:
+    url(icons.png) no-repeat -4px -198px,
+    -webkit-gradient(linear, left top, left bottom,
+      from(#fcfcfc),
+      to(#e6e6e6));
+  background:
+    url(icons.png) no-repeat -4px -198px,
+    -moz-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+}
+input[type=submit].like:active {
+  background: #f9f9f9 url(icons.png) no-repeat -4px -262px;
+}

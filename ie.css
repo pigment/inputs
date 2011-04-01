@@ -1,0 +1,12 @@
+/* Buttons */
+
+input.button,
+a.button:link, a.button:visited {
+  zoom: 1;
+  overflow: visible;
+  behavior: url(PIE.htc);
+}
+input[type=submit].small,
+a.button.small {
+  line-height: 15px;
+}

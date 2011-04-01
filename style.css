@@ -1,0 +1,124 @@
+/*
+ * =GRID */
+
+.column {
+  float: left;
+  display: inline;
+  margin-right: 24px;
+}
+
+
+/*  Less Framework 4
+  http://lessframework.com
+  by Joni Korpi
+  License: http://creativecommons.org/licenses/MIT/ */
+
+
+/*    Default Layout: 992px. 
+    Gutters: 24px.
+    Outer margins: 48px.
+    Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+  -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+input, textarea, .button {
+  margin: 0 0 24px;
+}
+h1, h2 {
+  font-family: 'Lato', arial, serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 48px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #aaa;
+}
+#main {
+  width: 896px;
+  margin: 0 auto;
+}
+
+#intro {
+  width: 620px;
+  margin: 48px 0;
+}
+#fields, #misc {
+  width: 252px;
+}
+#buttons {
+  width: 344px;
+}
+#misc {
+  margin-right: 0;
+}
+input, textarea {
+  font-size: 13px;
+  width: 100%;
+}
+
+/*    Tablet Layout: 768px.
+    Gutters: 24px.
+    Outer margins: 28px.
+    Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+  body {
+    width: 712px;
+    padding: 48px 28px 60px;
+  }
+}
+
+
+
+/*    Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+  
+  body {
+    width: 252px;
+    padding: 48px 34px 60px;
+  }
+  
+}
+
+
+
+/*    Wide Mobile Layout: 480px.
+    Gutters: 24px.
+    Outer margins: 22px.
+    Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  body {
+    width: 436px;
+    padding: 36px 22px 48px;
+  }
+  
+}
