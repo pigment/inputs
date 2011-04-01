@@ -21,9 +21,6 @@ textarea {
   background: #fcfcfc;
   color: #aaa;
 }
-textarea {
-  padding-bottom: 0; /* Prevents FX4 resize handle from 'floating' in mid-air */
-}
 input:focus, textarea:focus {
   background: #fff;
   color: #444;
