@@ -1,6 +1,6 @@
 /*
- * Form
- * Nice form elements & buttons */
+ * Inputs
+ * Base form styles  */
 
 input::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
 
@@ -22,8 +22,7 @@ textarea {
   color: #aaa;
 }
 textarea {
-  /* Prevents FX4 resize handle from 'floating' */
-  padding-bottom: 0;
+  padding-bottom: 0; /* Prevents FX4 resize handle from 'floating' in mid-air */
 }
 input:focus, textarea:focus {
   background: #fff;
@@ -142,7 +141,7 @@ a.button i {
   width: 16px;
   height: 16px;
   margin-right: 4px;
-  background: transparent url(icons.png) no-repeat;
+  background: transparent url(../images/inputs-icons.png) no-repeat;
 }
 a.button.new i {
   background-position: -8px -8px;
@@ -166,32 +165,32 @@ input[type=submit].delete:active {
 }
 input[type=submit].delete {
   background:
-    url(icons.png) no-repeat -4px -102px,
+    url(../images/inputs-icons.png) no-repeat -4px -102px,
     -webkit-gradient(linear, left top, left bottom,
       from(#fcfcfc),
       to(#e6e6e6));
   background:
-    url(icons.png) no-repeat -4px -102px,
+    url(../images/inputs-icons.png) no-repeat -4px -102px,
     -moz-linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
 }
 input[type=submit].delete:active {
-  background: #f9f9f9 url(icons.png) no-repeat -4px -166px;
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -166px;
 }
 
 input[type=submit].like {
   background:
-    url(icons.png) no-repeat -4px -198px,
+    url(../images/inputs-icons.png) no-repeat -4px -198px,
     -webkit-gradient(linear, left top, left bottom,
       from(#fcfcfc),
       to(#e6e6e6));
   background:
-    url(icons.png) no-repeat -4px -198px,
+    url(../images/inputs-icons.png) no-repeat -4px -198px,
     -moz-linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
 }
 input[type=submit].like:active {
-  background: #f9f9f9 url(icons.png) no-repeat -4px -262px;
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -262px;
 }

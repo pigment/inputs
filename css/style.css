@@ -68,6 +68,9 @@ input, textarea {
   font-size: 13px;
   width: 100%;
 }
+.text-container {
+  margin-right: 12px; /* For 100% widths Should equal textfield-left/right-padding + textfield-left/right-border-width */
+}
 
 /*    Tablet Layout: 768px.
     Gutters: 24px.
