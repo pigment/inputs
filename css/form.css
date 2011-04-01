@@ -2,7 +2,7 @@
  * Inputs
  * Base form styles  */
 
-input::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
+input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
 
 /* Styles input types including the new HTML5 ones - email, url etc... */
 input,

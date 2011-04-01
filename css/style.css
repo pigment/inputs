@@ -28,7 +28,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
-input, textarea, .button {
+input, textarea, button, .button {
   margin: 0 0 24px;
 }
 h1, h2 {
