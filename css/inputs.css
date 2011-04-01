@@ -87,6 +87,7 @@ a.button:active {
 /* SMALL */
 
 input[type=submit].small,
+button.small,
 a.button.small {
   height: auto;
   padding: 2px 11px;
@@ -96,7 +97,8 @@ a.button.small {
   line-height: 16px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 }
-input[type=submit].small {
+input[type=submit].small,
+button.small {
   height: 22px;
 }
 
