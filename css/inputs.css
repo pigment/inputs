@@ -92,11 +92,42 @@ a.button.small {
   font-weight: normal;
   font-size: 11px;
   line-height: 16px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
 }
 input[type=submit].small,
 button.small {
   height: 22px;
+}
+
+/* GROUPED BUTTONS */
+
+ul.button-group,
+ul.button-group li {
+  list-style:none;
+  list-style-image: none;
+  margin: 0;
+}
+ul.button-group li {
+  float: left;
+}
+ul.button-group input[type=submit],
+ul.button-group button,
+ul.button-group a.button {
+  border-left-width: 0;
+  border-radius: 0;
+}
+ul.button-group li.first input[type=submit],
+ul.button-group li.first button,
+ul.button-group li.first a.button {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-left-width: 1px;
+}
+ul.button-group li.last input[type=submit],
+ul.button-group li.last button,
+ul.button-group li.last a.button {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
 /* ICONS */

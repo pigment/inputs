@@ -28,8 +28,8 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
-input, textarea, button, .button {
-  margin: 0 0 24px;
+input[type=submit], button, .button {
+  margin: 0 0 12px;
 }
 h1, h2 {
   font-family: 'Lato', arial, serif;
@@ -70,6 +70,7 @@ input, textarea {
 }
 .text-container {
   margin-right: 12px; /* For 100% widths Should equal textfield-left/right-padding + textfield-left/right-border-width */
+  margin-bottom: 24px;
 }
 
 /*    Tablet Layout: 768px.
