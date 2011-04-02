@@ -130,6 +130,15 @@ ul.button-group li.last a.button {
   border-bottom-right-radius: 2em;
 }
 
+ul.button-group li.first input[type=submit].small,
+ul.button-group li.first button.small,
+ul.button-group li.first a.button.small,
+ul.button-group li.last input[type=submit].small,
+ul.button-group li.last button.small,
+ul.button-group li.last a.button.small {
+  padding: 2px 14px;
+}
+
 /* ICONS */
 
 /*
