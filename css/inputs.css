@@ -11,9 +11,9 @@ textarea {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   
   /* Avoid shorthand for padding - IE bug: http://prax.is/misc/ie8-bug-css-padding-input-element.html */
-  padding: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 4px;
+  padding-top:    6px;
+  padding-bottom: 6px;
   
   border: 1px solid #ccc;
   border-top: 1px solid #aaa;
@@ -119,8 +119,8 @@ ul.button-group a.button {
 ul.button-group li.first input[type=submit],
 ul.button-group li.first button,
 ul.button-group li.first a.button {
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
+  border-top-left-radius:     2em;
+  border-bottom-left-radius:  2em;
   border-left-width: 1px;
 }
 ul.button-group li.last input[type=submit],
