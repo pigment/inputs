@@ -27,8 +27,9 @@ input:focus, textarea:focus {
 }
 
 input[type=submit],
+input[type=button],
 button,
-a.button:link, a.button:visited {
+a.button, a.button:link, a.button:visited {
   width: auto;
   display: inline-block;
   
@@ -57,11 +58,13 @@ a.button:link, a.button:visited {
   /* REMEMBER IE STYLES ie.css */
 }
 input[type=submit],
+input[type=button],
 button {
   /* Submit button height includes borders */
   height: 32px;
 }
 input[type=submit]:hover,
+input[type=button]:hover,
 button:hover,
 a.button:hover {
   background: #fff;
@@ -74,6 +77,7 @@ a.button:hover {
   color: #000;
 }
 input[type=submit]:active,
+input[type=button]:active,
 button:active,
 a.button:active {
   background: #f9f9f9;
@@ -84,10 +88,11 @@ a.button:active {
 /* SMALL */
 
 input[type=submit].small,
+input[type=button].small,
 button.small,
 a.button.small {
   height: auto;
-  padding: 2px 11px;
+  padding: 2px 12px;
   
   font-weight: normal;
   font-size: 11px;
@@ -95,6 +100,7 @@ a.button.small {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
 }
 input[type=submit].small,
+input[type=button].small,
 button.small {
   height: 22px;
 }
@@ -136,7 +142,7 @@ ul.button-group li.first a.button.small,
 ul.button-group li.last input[type=submit].small,
 ul.button-group li.last button.small,
 ul.button-group li.last a.button.small {
-  padding: 2px 14px;
+  padding: 2px 12px;
 }
 
 /* ICONS */
@@ -171,6 +177,13 @@ a.button.delete i {
 a.button.delete:active i {
   background-position: -8px -168px;
 }
+
+/*.multiplebgs input[type=submit].with-icon,
+.multiplebgs button.with-icon,
+.multiplebgs a.button.with-icon {
+  padding-left: 24px;
+}*/
+
 input[type=submit].delete:hover,
 a.button.delete:hover {
   color: #900;
