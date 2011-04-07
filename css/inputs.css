@@ -28,9 +28,10 @@ input:focus, textarea:focus {
 
 /* Buttons */
 input[type=submit],
-input[type=button],
+input[type=reset],
 button,
-a.button, a.button:link, a.button:visited {
+.button,
+.button:link, .button:visited {
   width: auto;
   display: inline-block;
   
@@ -43,12 +44,12 @@ a.button, a.button:link, a.button:visited {
   background-image:
     -webkit-gradient(linear, left top, left bottom,
         from(#fff),
-        color-stop(0.05, #fcfcfc),
+        color-stop(1px, #fcfcfc),
         to(#e6e6e6));
   background-image:
       -moz-linear-gradient(top,
           #fff,
-          #fcfcfc 5%,
+          #fcfcfc 1px,
           #e6e6e6);
   -pie-background: linear-gradient(#fcfcfc, #e6e6e6);
   
@@ -69,18 +70,24 @@ a.button, a.button:link, a.button:visited {
 }
 
 input[type=submit],
-input[type=button],
-button {
-  /* Submit button height includes borders */
+input[type=reset],
+button,
+input.button {
   height: 32px;
 }
 input[type=submit]:hover,
-input[type=button]:hover,
+input[type=reset]:hover,
 button:hover,
-a.button:hover {
+.button:hover {
   background: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
-  background-image: -moz-linear-gradient(top,  #fff,  #efefef);
+  background-image:
+    -webkit-gradient(linear, left top, left bottom,
+        from(#fff),
+        to(#efefef));
+  background-image:
+      -moz-linear-gradient(top,
+          #fff,
+          #efefef);
   -pie-background: linear-gradient(#fff, #efefef);
   
   border-color: #666;
@@ -88,9 +95,9 @@ a.button:hover {
   color: #000;
 }
 input[type=submit]:active,
-input[type=button]:active,
+input[type=reset]:active,
 button:active,
-a.button:active {
+.button:active {
   background: #f9f9f9;
   border-color: #999;
   color: #b0b0b0;
@@ -99,9 +106,9 @@ a.button:active {
 /* SMALL */
 
 input[type=submit].small,
-input[type=button].small,
+input[type=reset].small,
 button.small,
-a.button.small {
+.button.small {
   height: auto;
   padding: 2px 12px;
   
@@ -110,9 +117,10 @@ a.button.small {
   line-height: 16px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
 }
+
 input[type=submit].small,
-input[type=button].small,
-button.small {
+button.small,
+input.button.small {
   height: 22px;
 }
 
@@ -128,61 +136,53 @@ ul.button-group li {
   float: left;
 }
 ul.button-group input[type=submit],
+ul.button-group input[type=reset],
 ul.button-group button,
-ul.button-group a.button {
+ul.button-group .button {
   border-left-width: 0;
   border-radius: 0;
 }
 ul.button-group li.first input[type=submit],
+ul.button-group li.first input[type=reset],
 ul.button-group li.first button,
-ul.button-group li.first a.button {
+ul.button-group li.first .button {
   border-top-left-radius:     2em;
   border-bottom-left-radius:  2em;
   border-left-width: 1px;
 }
 ul.button-group li.last input[type=submit],
+ul.button-group li.last input[type=reset],
 ul.button-group li.last button,
-ul.button-group li.last a.button {
+ul.button-group li.last .button {
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;
-}
-
-ul.button-group li.first input[type=submit].small,
-ul.button-group li.first button.small,
-ul.button-group li.first a.button.small,
-ul.button-group li.last input[type=submit].small,
-ul.button-group li.last button.small,
-ul.button-group li.last a.button.small {
-  padding: 2px 12px;
 }
 
 /* ICONS */
 
 /*
-WIP
-*/
+ * @WIP
+ */
 
 /* Multiple Bgs */
 .multiplebgs input[type=submit].small.bg-icon,
-.multiplebgs input[type=button].small.bg-icon,
+.multiplebgs input[type=reset].small.bg-icon,
 .multiplebgs button.small.bg-icon,
-.multiplebgs a.button.small.bg-icon {
+.multiplebgs .button.small.bg-icon {
   padding-left: 24px;
 }
 
-/* + New + */
-.multiplebgs input[type=submit].small.bg-icon.new,
-.multiplebgs input[type=button].small.bg-icon.new,
-.multiplebgs button.small.bg-icon.new,
-.multiplebgs a.button.small.bg-icon.new {
-  padding-left: 24px;
-  
+/* + Create + */
+.multiplebgs input[type=submit].small.bg-icon.create,
+.multiplebgs input[type=reset].small.bg-icon.create,
+.multiplebgs button.small.bg-icon.create,
+.multiplebgs .button.small.bg-icon.create {  
   /* SVG for IE9 / Opera */
   background:
     url(../images/inputs-icons.png) no-repeat -4px -6px,
     url(../images/white-gradient.svg);
   
-  /* Although -webkit- and -moz- both support SVG, they won't make the HTTP request (to white-gradient.svg) if gradients exist */
+  /* Avoids HTTP request to SVG file */
   background:
     url(../images/inputs-icons.png) no-repeat -4px -6px,
     -webkit-gradient(linear, left top, left bottom,
@@ -194,19 +194,30 @@ WIP
       #fcfcfc,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.new:active,
-.multiplebgs input[type=button].small.bg-icon.new:active,
-.multiplebgs button.small.bg-icon.new:active,
-.multiplebgs a.button.small.bg-icon.new:active {
-  padding-left: 24px;
+.multiplebgs input[type=submit].small.bg-icon.create:active,
+.multiplebgs input[type=reset].small.bg-icon.create:active,
+.multiplebgs button.small.bg-icon.create:active,
+.multiplebgs .button.small.bg-icon.create:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -70px;
 }
 
-/* - Negative - */
-.multiplebgs input[type=submit].small.bg-icon.negative,
-.multiplebgs input[type=button].small.bg-icon.negative,
-.multiplebgs button.small.bg-icon.negative,
-.multiplebgs a.button.small.bg-icon.negative {
+/* - Delete - */
+input[type=submit].delete:hover,
+input[type=reset].delete:hover,
+button.delete:hover,
+.button.delete:hover {
+  color: #900;
+}
+input[type=submit].delete:active,
+input[type=reset].delete:active,
+button.delete:active,
+.button.delete:active {
+  color: #b0b0b0;
+}
+.multiplebgs input[type=submit].small.bg-icon.delete,
+.multiplebgs input[type=reset].small.bg-icon.delete,
+.multiplebgs button.small.bg-icon.delete,
+.multiplebgs .button.small.bg-icon.delete {
   background:
     url(../images/inputs-icons.png) no-repeat -4px -102px,
     -webkit-gradient(linear, left top, left bottom,
@@ -218,18 +229,18 @@ WIP
       #fcfcfc,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.negative:active,
-.multiplebgs input[type=button].small.bg-icon.negative:active,
-.multiplebgs button.small.bg-icon.negative:active,
-.multiplebgs a.button.small.bg-icon.negative:active {
+.multiplebgs input[type=submit].small.bg-icon.delete:active,
+.multiplebgs input[type=reset].small.bg-icon.delete:active,
+.multiplebgs button.small.bg-icon.delete:active,
+.multiplebgs .button.small.bg-icon.delete:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -166px;
 }
 
-/* √ Tick √ */
-.multiplebgs input[type=submit].small.bg-icon.positive,
-.multiplebgs input[type=button].small.bg-icon.positive,
-.multiplebgs button.small.bg-icon.positive,
-.multiplebgs a.button.small.bg-icon.positive {
+/* √ Update √ */
+.multiplebgs input[type=submit].small.bg-icon.update,
+.multiplebgs input[type=reset].small.bg-icon.update,
+.multiplebgs button.small.bg-icon.update,
+.multiplebgs .button.small.bg-icon.update {
   background:
     url(../images/inputs-icons.png) no-repeat -4px -198px,
     -webkit-gradient(linear, left top, left bottom,
@@ -241,46 +252,9 @@ WIP
       #fcfcfc,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.positive:active,
-.multiplebgs input[type=button].small.bg-icon.positive:active,
-.multiplebgs button.small.bg-icon.positive:active,
-.multiplebgs a.button.small.bg-icon.positive:active {
+.multiplebgs input[type=submit].small.bg-icon.update:active,
+.multiplebgs input[type=reset].small.bg-icon.update:active,
+.multiplebgs button.small.bg-icon.update:active,
+.multiplebgs .button.small.bg-icon.update:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -262px;
-}
-
-
-a.button.small.with-icon {
-  padding: 2px 11px 2px 4px;
-}
-input[type=submit].with-icon {
-  padding-left: 24px;
-}
-a.button i {
-  display: block;
-  float: left;
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-  background: transparent url(../images/inputs-icons.png) no-repeat;
-}
-a.button.new i {
-  background-position: -8px -8px;
-}
-a.button.new:active i {
-  background-position: -8px -72px;
-}
-a.button.delete i {
-  background-position: -8px -104px;
-}
-a.button.delete:active i {
-  background-position: -8px -168px;
-}
-
-input[type=submit].delete:hover,
-a.button.delete:hover {
-  color: #900;
-}
-a.button.delete:active,
-input[type=submit].delete:active {
-  color: #b0b0b0;
 }
