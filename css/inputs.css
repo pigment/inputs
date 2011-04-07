@@ -174,7 +174,6 @@ ul.button-group li.last .button {
 
 /* + Create + */
 .multiplebgs input[type=submit].small.bg-icon.create,
-.multiplebgs input[type=reset].small.bg-icon.create,
 .multiplebgs button.small.bg-icon.create,
 .multiplebgs .button.small.bg-icon.create {  
   /* SVG for IE9 / Opera */
@@ -195,7 +194,6 @@ ul.button-group li.last .button {
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.bg-icon.create:active,
-.multiplebgs input[type=reset].small.bg-icon.create:active,
 .multiplebgs button.small.bg-icon.create:active,
 .multiplebgs .button.small.bg-icon.create:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -70px;
