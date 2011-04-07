@@ -40,18 +40,25 @@ button,
   height: 30px;
   
   background: #f3f3f3;
+  /* SVG for IE9 & Opera */
   background-image: url(../images/white-gradient.svg);
+  
+  /* CSS3 Gradients for Webkit & Moz */
   background-image:
-    -webkit-gradient(linear, left top, left bottom,
-        from(#fff),
-        color-stop(1px, #fcfcfc),
-        to(#e6e6e6));
+    -webkit-linear-gradient(top,
+        #fff,
+        #fcfcfc 1px,
+        #e6e6e6);
   background-image:
-      -moz-linear-gradient(top,
-          #fff,
-          #fcfcfc 1px,
-          #e6e6e6);
-  -pie-background: linear-gradient(#fcfcfc, #e6e6e6);
+    -moz-linear-gradient(top,
+        #fff,
+        #fcfcfc 1px,
+        #e6e6e6);
+  background-image:
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
   
   padding: 0 32px;
   -webkit-border-radius: 2em;
@@ -66,7 +73,7 @@ button,
   color: #444;
   text-shadow: 0 1px 0 rgba(255,255,255, 1);
   
-  /* REMEMBER IE STYLES ie.css */
+  /* REMEMBER ie.css! */
 }
 
 input[type=submit],
@@ -171,13 +178,10 @@ ul.button-group li.last .button {
 /* + Create + */
 .multiplebgs input[type=submit].small.bg-icon.create,
 .multiplebgs button.small.bg-icon.create,
-.multiplebgs .button.small.bg-icon.create {  
-  /* SVG for IE9 / Opera */
+.multiplebgs .button.small.bg-icon.create {
   background:
     url(../images/inputs-icons.png) no-repeat -4px -6px,
     url(../images/white-gradient.svg);
-  
-  /* Avoids HTTP request to SVG file */
   background:
     url(../images/inputs-icons.png) no-repeat -4px -6px,
     -webkit-gradient(linear, left top, left bottom,
@@ -201,14 +205,12 @@ input[type=reset].delete:hover,
 button.delete:hover,
 .button.delete:hover {
   color: #900;
-  border-color: #933;
 }
 input[type=submit].delete:active,
 input[type=reset].delete:active,
 button.delete:active,
 .button.delete:active {
   color: #b0b0b0;
-  border-color: #999;
 }
 .multiplebgs input[type=submit].small.bg-icon.delete,
 .multiplebgs input[type=reset].small.bg-icon.delete,
