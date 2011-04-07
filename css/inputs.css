@@ -8,6 +8,9 @@ label, input[type="button"], input[type="submit"], input[type=reset], input[type
 /* Remove button padding in FF */
 input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
 
+/*
+ * =TEXT */
+
 input,
 textarea {
   font-size: 1em;
@@ -29,7 +32,9 @@ input:focus, textarea:focus {
   color: #444;
 }
 
-/* Buttons */
+/*
+ * =BUTTONS */
+
 input[type=submit],
 input[type=reset],
 button,
@@ -188,7 +193,7 @@ ul.button-group li.last .button {
 .multiplebgs input[type=reset].small.bg-icon,
 .multiplebgs button.small.bg-icon,
 .multiplebgs .button.small.bg-icon {
-  padding-left: 23px;
+  padding-left: 22px;
   padding-right: 8px;
 }
 
@@ -293,4 +298,66 @@ button.remove:active,
 .multiplebgs button.small.bg-icon.confirm:active,
 .multiplebgs .button.small.bg-icon.confirm:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -262px;
+}
+
+/* ↓ Download ↓ */
+.multiplebgs input[type=submit].small.bg-icon.download,
+.multiplebgs input[type=reset].small.bg-icon.download,
+.multiplebgs button.small.bg-icon.download,
+.multiplebgs .button.small.bg-icon.download {
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -294px,
+    url(../images/button.svg);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -294px,
+    -webkit-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -294px,
+    -moz-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -294px,
+    linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+}
+.multiplebgs input[type=submit].small.bg-icon.download:active,
+.multiplebgs input[type=reset].small.bg-icon.download:active,
+.multiplebgs button.small.bg-icon.download:active,
+.multiplebgs .button.small.bg-icon.download:active {
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -358px;
+}
+
+/* ↑ Upload ↑ */
+.multiplebgs input[type=submit].small.bg-icon.upload,
+.multiplebgs input[type=reset].small.bg-icon.upload,
+.multiplebgs button.small.bg-icon.upload,
+.multiplebgs .button.small.bg-icon.upload {
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -390px,
+    url(../images/button.svg);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -390px,
+    -webkit-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -390px,
+    -moz-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -390px,
+    linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+}
+.multiplebgs input[type=submit].small.bg-icon.upload:active,
+.multiplebgs input[type=reset].small.bg-icon.upload:active,
+.multiplebgs button.small.bg-icon.upload:active,
+.multiplebgs .button.small.bg-icon.upload:active {
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -454px;
 }
