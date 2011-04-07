@@ -207,12 +207,14 @@ input[type=reset].delete:hover,
 button.delete:hover,
 .button.delete:hover {
   color: #900;
+  border-color: #933;
 }
 input[type=submit].delete:active,
 input[type=reset].delete:active,
 button.delete:active,
 .button.delete:active {
   color: #b0b0b0;
+  border-color: #999;
 }
 .multiplebgs input[type=submit].small.bg-icon.delete,
 .multiplebgs input[type=reset].small.bg-icon.delete,
