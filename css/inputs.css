@@ -89,6 +89,7 @@ input[type=reset]:hover,
 button:hover,
 .button:hover {
   background: #fff;
+  background-image: url(../images/button-hover.svg);
   background-image:
     -webkit-linear-gradient(top,
         #fff,
