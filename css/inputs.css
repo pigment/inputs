@@ -50,23 +50,31 @@ button,
   
   background: #f3f3f3;
   
-  /* SVG for IE9 & Opera. CSS3 Gradients for Webkit & Moz (does not make request for .svg) */
+  /* SVG fallback. CSS3 Gradients for Webkit & Moz (does not make request for .svg) */
   background-image: url(../images/button.svg);
-  background-image:
-    -webkit-linear-gradient(top,
-        #fff,
-        #fcfcfc 1px,
-        #e6e6e6);
-  background-image:
-    -moz-linear-gradient(top,
-        #fff,
-        #fcfcfc 1px,
-        #e6e6e6);
-  background-image:
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
+  
+  /*
+   * Gradient syntax is getting ridiculous!
+   * http://leaverou.me/2011/03/convert-standard-gradient-syntax-to-webkit-gradient-and-others/
+   */
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff), to(#e6e6e6),
+    color-stop(5%, #fcfcfc));
+  background-image: -webkit-linear-gradient(top,
+    #fff,
+    #fcfcfc 1px,
+    #e6e6e6);
+  background-image: -moz-linear-gradient(top,
+    #fff,
+    #fcfcfc 1px,
+    #e6e6e6);
+  background-image: linear-gradient(top,
+    #fff,
+    #fcfcfc 1px,
+    #e6e6e6);
   
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
@@ -95,18 +103,20 @@ button:hover,
 .button:hover {
   background: #fff;
   background-image: url(../images/button-hover.svg);
-  background-image:
-    -webkit-linear-gradient(top,
-        #fff,
-        #efefef);
-  background-image:
-      -moz-linear-gradient(top,
-          #fff,
-          #efefef);
-  background-image:
-    linear-gradient(top,
-        #fff,
-        #efefef);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff), to(#efefef));
+  background-image: -webkit-linear-gradient(top,
+    #fff,
+    #efefef);
+  background-image: -moz-linear-gradient(top,
+    #fff,
+    #efefef);
+  background-image: linear-gradient(top,
+    #fff,
+    #efefef);
   
   border-color: #666;
   
@@ -204,20 +214,31 @@ ul.button-group li.last .button {
   background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
     url(../images/button.svg);
+  background: 
+    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fff), to(#e6e6e6),
+      color-stop(5%, #fcfcfc));
   background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
     -webkit-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
     -moz-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
     linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.bg-icon.add:active,
@@ -246,20 +267,31 @@ button.remove:active,
   background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
     url(../images/button.svg);
+  background: 
+    url(../images/inputs-icons.png) no-repeat -5px -102px,
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fff), to(#e6e6e6),
+      color-stop(5%, #fcfcfc));
   background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
     -webkit-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
     -moz-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
     linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.bg-icon.remove:active,
@@ -277,20 +309,31 @@ button.remove:active,
   background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
     url(../images/button.svg);
+  background: 
+    url(../images/inputs-icons.png) no-repeat -5px -198px,
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fff), to(#e6e6e6),
+      color-stop(5%, #fcfcfc));
   background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
     -webkit-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
     -moz-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
     linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.bg-icon.confirm:active,
@@ -308,20 +351,31 @@ button.remove:active,
   background:
     url(../images/inputs-icons.png) no-repeat -5px -294px,
     url(../images/button.svg);
-  background:
+  background: 
     url(../images/inputs-icons.png) no-repeat -5px -294px,
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fff), to(#e6e6e6),
+      color-stop(5%, #fcfcfc));
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px 294px,
     -webkit-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -294px,
     -moz-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -294px,
     linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.bg-icon.download:active,
@@ -339,20 +393,31 @@ button.remove:active,
   background:
     url(../images/inputs-icons.png) no-repeat -5px -390px,
     url(../images/button.svg);
+  background: 
+    url(../images/inputs-icons.png) no-repeat -5px -390px,
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fff), to(#e6e6e6),
+      color-stop(5%, #fcfcfc));
   background:
     url(../images/inputs-icons.png) no-repeat -5px -390px,
     -webkit-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -390px,
     -moz-linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -390px,
     linear-gradient(top,
-      #fcfcfc,
+      #fff,
+      #fcfcfc 1px,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.bg-icon.upload:active,
