@@ -45,8 +45,8 @@ button,
   
   background: #f3f3f3;
   
-  /* SVG for IE9 & Opera, CSS3 Gradients for Webkit & Moz */
-  background-image: url(../images/white-gradient.svg);
+  /* SVG for IE9 & Opera. CSS3 Gradients for Webkit & Moz (does not make request for .svg) */
+  background-image: url(../images/button.svg);
   background-image:
     -webkit-linear-gradient(top,
         #fff,
@@ -197,7 +197,7 @@ ul.button-group li.last .button {
 .multiplebgs .button.small.bg-icon.add {
   background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
-    url(../images/white-gradient.svg);
+    url(../images/button.svg);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
     -webkit-linear-gradient(top,
@@ -239,7 +239,7 @@ button.remove:active,
 .multiplebgs .button.small.bg-icon.remove {
   background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
-    url(../images/white-gradient.svg);
+    url(../images/button.svg);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
     -webkit-linear-gradient(top,
@@ -270,7 +270,7 @@ button.remove:active,
 .multiplebgs .button.small.bg-icon.confirm {
   background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
-    url(../images/white-gradient.svg);
+    url(../images/button.svg);
   background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
     -webkit-linear-gradient(top,
