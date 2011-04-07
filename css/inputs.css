@@ -2,10 +2,12 @@
  * Inputs
  * Base form styles  */
 
+label, input[type="button"], input[type="submit"], input[type=reset], input[type="image"], button { cursor: pointer; }
+
+
 /* Remove button padding in FF */
 input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
 
-/* Styles input types including the new HTML5 ones - email, url etc... */
 input,
 textarea {
   font-size: 1em;
@@ -39,6 +41,7 @@ button,
   overflow: hidden;
   text-decoration: none;
   height: 30px;
+  padding: 0 32px;
   
   background: #f3f3f3;
   
@@ -60,7 +63,6 @@ button,
       #fcfcfc 1px,
       #e6e6e6);
   
-  padding: 0 32px;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
   border-radius: 2em;
@@ -88,14 +90,17 @@ button:hover,
 .button:hover {
   background: #fff;
   background-image:
-    -webkit-gradient(linear, left top, left bottom,
-        from(#fff),
-        to(#efefef));
+    -webkit-linear-gradient(top,
+        #fff,
+        #efefef);
   background-image:
       -moz-linear-gradient(top,
           #fff,
           #efefef);
-  -pie-background: linear-gradient(#fff, #efefef);
+  background-image:
+    linear-gradient(top,
+        #fff,
+        #efefef);
   
   border-color: #666;
   
@@ -148,22 +153,32 @@ ul.button-group input[type=reset],
 ul.button-group button,
 ul.button-group .button {
   border-left-width: 0;
-  border-radius: 0;
+  -moz-border-radius:     0;
+  -webkit-border-radius:  0;
+  border-radius:          0;
 }
 ul.button-group li.first input[type=submit],
 ul.button-group li.first input[type=reset],
 ul.button-group li.first button,
 ul.button-group li.first .button {
-  border-top-left-radius:     2em;
-  border-bottom-left-radius:  2em;
+  -moz-border-radius-topleft:         2em;
+  -moz-border-radius-bottomleft:      2em;
+  -webkit-border-bottom-left-radius:  2em;
+  -webkit-border-top-left-radius:     2em;
+  border-top-left-radius:             2em;
+  border-bottom-left-radius:          2em;
   border-left-width: 1px;
 }
 ul.button-group li.last input[type=submit],
 ul.button-group li.last input[type=reset],
 ul.button-group li.last button,
 ul.button-group li.last .button {
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
+  -moz-border-radius-topright:        2em;
+  -moz-border-radius-bottomright:     2em;
+  -webkit-border-bottom-right-radius: 2em;
+  -webkit-border-top-right-radius:    2em;
+  border-top-right-radius:            2em;
+  border-bottom-right-radius:         2em;
 }
 
 /* ICONS */
@@ -173,32 +188,37 @@ ul.button-group li.last .button {
 .multiplebgs input[type=reset].small.bg-icon,
 .multiplebgs button.small.bg-icon,
 .multiplebgs .button.small.bg-icon {
-  padding-left: 24px;
+  padding-left: 23px;
+  padding-right: 8px;
 }
 
 /* + Add + */
 .multiplebgs input[type=submit].small.bg-icon.add,
 .multiplebgs button.small.bg-icon.add,
 .multiplebgs .button.small.bg-icon.add {
-  
   background:
-    url(../images/inputs-icons.png) no-repeat -4px -6px,
+    url(../images/inputs-icons.png) no-repeat -5px -6px,
     url(../images/white-gradient.svg);
   background:
-    url(../images/inputs-icons.png) no-repeat -4px -6px,
+    url(../images/inputs-icons.png) no-repeat -5px -6px,
     -webkit-linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat -4px -6px,
+    url(../images/inputs-icons.png) no-repeat -5px -6px,
     -moz-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.bg-icon.add:active,
 .multiplebgs button.small.bg-icon.add:active,
 .multiplebgs .button.small.bg-icon.add:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -70px;
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -70px;
 }
 
 /* - Remove - */
@@ -219,13 +239,21 @@ button.remove:active,
 .multiplebgs button.small.bg-icon.remove,
 .multiplebgs .button.small.bg-icon.remove {
   background:
-    url(../images/inputs-icons.png) no-repeat -4px -102px,
+    url(../images/inputs-icons.png) no-repeat -5px -102px,
+    url(../images/white-gradient.svg);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -102px,
     -webkit-linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat -4px -102px,
+    url(../images/inputs-icons.png) no-repeat -5px -102px,
     -moz-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -102px,
+    linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
 }
@@ -233,7 +261,7 @@ button.remove:active,
 .multiplebgs input[type=reset].small.bg-icon.remove:active,
 .multiplebgs button.small.bg-icon.remove:active,
 .multiplebgs .button.small.bg-icon.remove:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -166px;
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -166px;
 }
 
 /* √ Confirm √ */
@@ -242,13 +270,21 @@ button.remove:active,
 .multiplebgs button.small.bg-icon.confirm,
 .multiplebgs .button.small.bg-icon.confirm {
   background:
-    url(../images/inputs-icons.png) no-repeat -4px -198px,
+    url(../images/inputs-icons.png) no-repeat -5px -198px,
+    url(../images/white-gradient.svg);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -198px,
     -webkit-linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat -4px -198px,
+    url(../images/inputs-icons.png) no-repeat -5px -198px,
     -moz-linear-gradient(top,
+      #fcfcfc,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat -5px -198px,
+    linear-gradient(top,
       #fcfcfc,
       #e6e6e6);
 }
@@ -256,5 +292,5 @@ button.remove:active,
 .multiplebgs input[type=reset].small.bg-icon.confirm:active,
 .multiplebgs button.small.bg-icon.confirm:active,
 .multiplebgs .button.small.bg-icon.confirm:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -4px -262px;
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -262px;
 }
