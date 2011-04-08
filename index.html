@@ -4,99 +4,99 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
-  <title>Inputs</title>
+  <title></title>
   <meta name="description" content="">
-  <meta name="author" content="Pigment Ltd. - http://thinkpigment.com">
+  <meta name="author" content="">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-  <link href='http://fonts.googleapis.com/css?family=Lato:light,regular,bold' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/inputs.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:regular,bold,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css?v=2">
-  
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/ie.css">
-  <![endif]-->
-  <!--[if lte IE 6]>
-    <link rel="stylesheet" href="css/ie6.css">
-  <![endif]-->
+  <link rel="stylesheet" href="http://pigment.github.com/inputs/css/inputs.css">
+
   <script src="js/modernizr-1.7.min.js"></script>
+  <script>
+    document.write('<style id="hide-css" type="text/css">.js-hide{display:none !important}</style>');
+  </script>
 </head>
 <body>
-  <header>
-  </header>
-    
-  <div class="clearfix" id="main" role="main">
-    <div id="intro">
-      <h1>Inputs</h1>
-    </div>
-    
-    <div class="column" id="buttons">
-      <input type="submit" value="Submit Input" />
-      <br>
-      <input type="reset" value="Reset Button" />
-      <br>
-      <button>
-        Button Tag
-      </button>
-      <br>
-      <a href="#" class="button">Anchor Tag</a>
-      <br>
-
-      <input class="small" type="submit" value="Submit Tag">
-      <br>
-      <button class="small">
-        Button Tag
-      </button>
-      <br>
-      <a href="#" class="small button">Anchor Tag</a>
-      <br>
-      
-      <ul class="button-group clearfix">
-        <li class="first"><a href="#" class="small button">First</a></li>
-        <li><a href="#" class="small button">Second</a></li>
-        <li class="last"><a href="#" class="small button">Last</a></li>
-      </ul>
-      
-      <a href="#" class="small add button bg-icon">Add Button</a>
-      <br>
-      <input class="small confirm bg-icon" type="submit" value="Confirm Button" />
-      <br>
-      <input class="small remove bg-icon" type="submit" value="Remove Button" />
-      <br>
-      <a href="#" class="small download button bg-icon">Download Button</a>
-      <br>
-      <a href="#" class="small upload button bg-icon">Upload Button</a>
-      <br>
-    </div>
-
-    <div class="column" id="fields">
-      <div class="text-container">
-        <input size="27" type="text" placeholder="This is an input field" />
+  <div id="container">
+    <header>
+      <div class="row">
+        <h1 class="column grid_10" id="logo">Inputs</h1>
       </div>
-      <div style="height: 200px; position: relative">
-        <div class="textarea-container">
-          <textarea cols="27" rows="5"></textarea>
+    </header>
+
+    <div class="row" id="main" role="main">
+      <div class="column grid_10">
+        <p>A set of nice base styles for buttons and form elements.<br /> Contribute on <a href="https://github.com/pigment/inputs/">GitHub</a></p>
+        <div class="row" id="examples">
+          <div class="column grid_10">
+            <div class="example">
+              <input type="submit" value="Submit Input" />
+              <div class="js-hide">
+                <pre><code>&lt;input type="submit" value="Submit Input" /&gt;</code></pre>
+              </div>
+            </div>
+            <div class="example">
+              <button>Button Tag</button>
+              <div class="js-hide">
+                <pre><code>&lt;button&gt;Button Tag&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+            <div class="example">
+              <a href="#" class="button">Anchor Button</a>
+              <div class="js-hide">
+                <pre><code>&lt;a href="#" class="button"&gt;Anchor Button&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+            <div class="example">
+              <input class="small" type="submit" value="Small Submit Input" />
+              <div class="js-hide">
+                <pre><code>&lt;input class="small" type="submit" value="Small Submit Input" /&gt;</code></pre>
+              </div>
+            </div>
+            <div class="example">
+              <ul class="button-group clearfix">
+                <li class="first"><input class="small" type="submit" value="Nice" /></li>
+                <li><input class="small" type="submit" value="Grouped" /></li>
+                <li class="last"><input class="small" type="submit" value="Buttons" /></li>
+              </ul>
+              <div class="js-hide">
+                <pre><code>&lt;ul class=&quot;button-group clearfix&quot;&gt;
+  &lt;li class=&quot;first&quot;&gt;&lt;input class=&quot;small&quot; type=&quot;submit&quot; value=&quot;Nice&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;input class=&quot;small&quot; type=&quot;submit&quot; value=&quot;Grouped&quot; /&gt;&lt;/li&gt;
+  &lt;li class=&quot;last&quot;&gt;&lt;input class=&quot;small&quot; type=&quot;submit&quot; value=&quot;Buttons&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+            <div class="example">
+              <a href="#" class="new small button">New Button Link</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     
-    <div class="column" id="misc">
-    <!-- 
-    TO DO:
-    select
-    radio
-    checkbox
-    range
-     -->
+    <div class="row clearfix">
+      <footer class="column grid_10">
+        <small id="license">Inputs is released under the <a href="http://unlicense.org/">Unlicense license</a></small>
+        <a href="http://www.thinkpigment.com"><img style="float: right" src="images/pigment-logo-sml.png" /></a>
+      </footer>
     </div>
   </div>
 
-  <footer>
-  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.js"%3E%3C/script%3E'))</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 </body>
 </html>

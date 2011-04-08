@@ -1,143 +1,227 @@
-/*
- * =GRID */
+
+/* ==== Scroll down to find where to put your styles :) ==== */
+
+/*  HTML5 ✰ Boilerplate  */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea {  color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+/* ================ */
+/* = The 1Kb Grid = */     /* 12 columns, 60 pixels each, with 20 pixel gutter */
+/* ================ */
+
+.grid_1 { width:60px; }
+.grid_2 { width:140px; }
+.grid_3 { width:220px; }
+.grid_4 { width:300px; }
+.grid_5 { width:380px; }
+.grid_6 { width:460px; }
+.grid_7 { width:540px; }
+.grid_8 { width:620px; }
+.grid_9 { width:700px; }
+.grid_10 { width:780px; }
 
 .column {
+  margin: 0 10px;
+  overflow: hidden;
   float: left;
   display: inline;
-  margin-right: 24px;
 }
-
-
-/*  Less Framework 4
-  http://lessframework.com
-  by Joni Korpi
-  License: http://creativecommons.org/licenses/MIT/ */
-
-
-/*    Default Layout: 992px. 
-    Gutters: 24px.
-    Outer margins: 48px.
-    Leftover space for scrollbars @1024px: 32px.
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896    */
+.row {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.row .row {
+  margin: 0 -10px;
+  width: auto;
+  display: inline-block;
+}
 
 body {
-  -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Lato;
+  text-align: center;
 }
-input, button, .button {
-  margin: 0 0 12px;
+a:link, a:visited {
+  color: #f06;
 }
-h1, h2 {
-  font-family: 'Lato', arial, serif;
-  font-size: 32px;
+a:hover {
+  text-decoration: none;
+  color: #0cf;
+}
+small {
+  font-size: 87.5%;
+}
+
+header {
+  height: 160px;
+  background: #212121;
+  overflow: hidden;
+}
+h1 {
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: normal;
-}
-h2 {
-  font-weight: 300;
-  font-size: 24px;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 160px;
   line-height: 1;
-  margin-bottom: 48px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid #aaa;
+  position: relative;
+  top: 50px;
+  color: #fff;
 }
+
 #main {
-  width: 896px;
-  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-
-#intro {
-  width: 620px;
-  margin: 48px 0;
+#examples {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-#fields, #misc {
-  width: 252px;
+.example {
+  margin-bottom: 20px;
+  line-height: 1;
 }
-#buttons {
-  width: 344px;
+ul.button-group {
+  display: inline-block;
 }
-#misc {
-  margin-right: 0;
+#examples pre {
+  display: inline-block;
+  background: #ffc;
+  font-size: 0.875em;
+  color: #514721;
+  text-align: left;
+  line-height: 1.5;
 }
-input, textarea {
-  font-size: 13px;
-  width: 100%;
+.example .js-hide {
+  margin: 10px 0 40px 0;
 }
-
-.text-container {
-  margin-right: 10px; /* For 100% widths Should equal textfield-left/right-padding + textfield-left/right-border-width */
-  margin-bottom: 24px;
+footer {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
 }
-
-textarea {
-  border: 1px solid #ccc;
-  width: 100%;
-  height: 100%;
-}
-
-.textarea-container {
-  margin-right: 10px;
-  margin-bottom: 14px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
-/*    Tablet Layout: 768px.
-    Gutters: 24px.
-    Outer margins: 28px.
-    Inherits styles from: Default Layout.
------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8
-px      68    160    252    344    436    528    620    712    */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  
-  body {
-    width: 712px;
-    padding: 48px 28px 60px;
-  }
+#license {
+  float: left;
 }
 
 
 
-/*    Mobile Layout: 320px.
-    Gutters: 24px.
-    Outer margins: 34px.
-    Inherits styles from: Default Layout.
----------------------------------------------
-cols    1     2      3
-px      68    160    252    */
 
-@media only screen and (max-width: 767px) {
-  
-  body {
-    width: 252px;
-    padding: 48px 34px 60px;
-  }
-  
+
+
+
+
+
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
 
-
-/*    Wide Mobile Layout: 480px.
-    Gutters: 24px.
-    Outer margins: 22px.
-    Inherits styles from: Default Layout, Mobile Layout.
-------------------------------------------------------------
-cols    1     2      3      4      5
-px      68    160    252    344    436    */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  
-  body {
-    width: 436px;
-    padding: 36px 22px 48px;
-  }
-  
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
 }
