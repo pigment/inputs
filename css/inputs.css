@@ -390,7 +390,7 @@ button.remove:active,
       from(#fff), to(#e6e6e6),
       color-stop(5%, #fcfcfc));
   background:
-    url(../images/inputs-icons.png) no-repeat -5px 294px,
+    url(../images/inputs-icons.png) no-repeat -5px -294px,
     -webkit-linear-gradient(top,
       #fff,
       #fcfcfc 1px,
