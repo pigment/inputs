@@ -1,7 +1,12 @@
 /*
  * Inputs
  * Base form styles  */
-
+input[type=submit]:focus,
+input[type=reset]:focus,
+button:focus,
+.button:focus {
+  outline: none;
+}
 label, input[type="button"], input[type="submit"], input[type=reset], input[type="image"], button { cursor: pointer; }
 
 
@@ -50,28 +55,32 @@ button,
   
   background: #f3f3f3;
   
-  /* SVG fallback. CSS3 Gradients for Webkit & Moz (does not make request for .svg) */
+  /* SVG fallback. */
   background-image: url(../images/button.svg);
   
   /*
    * Gradient syntax is getting ridiculous!
    * http://leaverou.me/2011/03/convert-standard-gradient-syntax-to-webkit-gradient-and-others/
    */
-  background-image: -webkit-gradient(
+  background: -webkit-gradient(
     linear,
     left top,
     left bottom,
     from(#fff), to(#e6e6e6),
     color-stop(5%, #fcfcfc));
-  background-image: -webkit-linear-gradient(top,
+  background: -webkit-linear-gradient(top,
     #fff,
     #fcfcfc 1px,
     #e6e6e6);
-  background-image: -moz-linear-gradient(top,
+  background: -moz-linear-gradient(top,
     #fff,
     #fcfcfc 1px,
     #e6e6e6);
-  background-image: linear-gradient(top,
+  -pie-background: linear-gradient(top,
+    #fff,
+    #fcfcfc 1px,
+    #e6e6e6);
+  background: linear-gradient(top,
     #fff,
     #fcfcfc 1px,
     #e6e6e6);
@@ -102,19 +111,22 @@ input[type=reset]:hover,
 button:hover,
 .button:hover {
   background: #fff;
-  background-image: url(../images/button-hover.svg);
-  background-image: -webkit-gradient(
+  background: url(../images/button-hover.svg);
+  background: -webkit-gradient(
     linear,
     left top,
     left bottom,
     from(#fff), to(#efefef));
-  background-image: -webkit-linear-gradient(top,
+  background: -webkit-linear-gradient(top,
     #fff,
     #efefef);
-  background-image: -moz-linear-gradient(top,
+  background: -moz-linear-gradient(top,
     #fff,
     #efefef);
-  background-image: linear-gradient(top,
+  -pie-background: linear-gradient(top,
+    #fff,
+    #efefef);
+  background: linear-gradient(top,
     #fff,
     #efefef);
   
@@ -127,7 +139,7 @@ input[type=reset]:active,
 button:active,
 .button:active {
   background: #f9f9f9;
-  border-color: #999;
+  border: 1px solid #999;
   color: #b0b0b0;
 }
 
