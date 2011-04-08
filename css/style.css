@@ -169,6 +169,14 @@ ul.button-group {
 .example .js-hide {
   margin: 10px 0 20px 0;
 }
+.textfield-example, .textarea-example {
+  width: 300px;
+  margin: 0 auto 20px;
+}
+.textarea-example {
+  position: relative;
+  height: 150px;
+}
 footer {
   padding: 10px 0;
   border-top: 1px solid #ccc;
