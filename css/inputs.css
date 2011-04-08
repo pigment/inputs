@@ -173,6 +173,7 @@ ul.button-group li {
   margin: 0;
 }
 ul.button-group li {
+  line-height: 1;
   float: left;
 }
 ul.button-group input[type=submit],
