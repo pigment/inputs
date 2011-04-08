@@ -70,7 +70,7 @@ button,
   overflow: hidden;
   text-decoration: none;
   height: 30px;
-  padding: 0 32px;
+  padding: 0 24px;
   
   background: #f3f3f3;
   
@@ -192,7 +192,6 @@ ul.button-group li {
   margin: 0;
 }
 ul.button-group li {
-  line-height: 1;
   float: left;
 }
 ul.button-group input[type=submit],
