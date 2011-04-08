@@ -4,7 +4,7 @@ A set of nice base styles for buttons and form elements, to aid prototyping web 
 
 Quick Start
 -----------
-Download using the link above. Include the stylesheet, icon file, Modernizr, and CSS3PIE to your project:
+Download using the link above. Include the stylesheet, icon file, Modernizr, and CSS3PIE to your project.
 
     <link rel="stylesheet" href="css/inputs.css">  
     <!--[if lte IE 8]>  
@@ -13,6 +13,7 @@ Download using the link above. Include the stylesheet, icon file, Modernizr, and
     <!--[if lte IE 6]>  
       <link rel="stylesheet" href="css/ie6.css">  
     <![endif]-->
+    <script src="js/modernizr-1.7.min.js"></script>
 
 Create a form and enjoy the style!
 
