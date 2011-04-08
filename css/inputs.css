@@ -37,6 +37,24 @@ input:focus, textarea:focus {
   color: #444;
 }
 
+.text-wrapper {
+  margin-right: 10px; /* = textfield-padding-left + textfield-padding-right + textfield-border-left-width + textfield-border-right-width*/
+}
+.lock-x input,
+.lock-x textarea {
+  width: 100%;
+}
+.lock-y {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-bottom: 14px;
+}
+.lock-y textarea {
+  width: 100%;
+  height: 100%;
+}
+
 /*
  * =BUTTONS */
 
