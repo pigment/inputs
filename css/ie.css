@@ -16,3 +16,72 @@ button.small,
 .button.small {
   line-height: 15px;
 }
+
+/* ICONS (if PIE.htc) */
+input[type=submit].small.bg-icon,
+input[type=reset].small.bg-icon,
+button.small.bg-icon,
+.button.small.bg-icon {
+  padding-left: 22px;
+  padding-right: 8px;
+}
+
+/* + Add + */
+input[type=submit].small.bg-icon.add,
+button.small.bg-icon.add,
+.button.small.bg-icon.add {
+  -pie-background:
+    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
+/* - Remove - */
+input[type=submit].small.bg-icon.remove,
+input[type=reset].small.bg-icon.remove,
+button.small.bg-icon.remove,
+.button.small.bg-icon.remove {
+  -pie-background:
+    url(../images/inputs-icons.png) no-repeat -5px -102px,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
+/* √ Confirm √ */
+input[type=submit].small.bg-icon.confirm,
+input[type=reset].small.bg-icon.confirm,
+button.small.bg-icon.confirm,
+.button.small.bg-icon.confirm {
+  -pie-background:
+    url(../images/inputs-icons.png) no-repeat -5px -198px,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
+/* ↓ Download ↓ */
+input[type=submit].small.bg-icon.download,
+input[type=reset].small.bg-icon.download,
+button.small.bg-icon.download,
+.button.small.bg-icon.download {
+  -pie-background:
+    url(../images/inputs-icons.png) no-repeat -5px -294px,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
+/* ↑ Upload ↑ */
+input[type=submit].small.bg-icon.upload,
+input[type=reset].small.bg-icon.upload,
+button.small.bg-icon.upload,
+.button.small.bg-icon.upload {
+  -pie-background:
+    url(../images/inputs-icons.png) no-repeat -5px -390px,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
