@@ -144,11 +144,11 @@ ul.button-group {
 }
 .textfield-example, .textarea-example {
   width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 .textarea-example {
   position: relative;
-  height: 100px;
+  height: 150px;
 }
 footer {
   padding: 10px 0;

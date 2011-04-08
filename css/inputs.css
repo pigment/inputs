@@ -44,14 +44,15 @@ input:focus, textarea:focus {
 .lock-x textarea {
   width: 100%;
 }
+
+/* Make sure textarea is wide to do this */
 .lock-y {
+  margin-bottom: 14px; /* = textarea-padding-top + textarea-padding-bottom + textarea-border-top-width + textarea-border-bottom-width*/
   position: absolute;
   top: 0;
   bottom: 0;
-  margin-bottom: 14px;
 }
 .lock-y textarea {
-  width: 100%;
   height: 100%;
 }
 
