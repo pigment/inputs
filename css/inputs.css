@@ -211,19 +211,12 @@ ul.button-group li.last .button {
 
 /* ICONS */
 
-/* Multiple Bgs */
-.multiplebgs input[type=submit].small.bg-icon,
-.multiplebgs input[type=reset].small.bg-icon,
-.multiplebgs button.small.bg-icon,
-.multiplebgs .button.small.bg-icon {
+/* + Add + */
+.multiplebgs input[type=submit].small.add,
+.multiplebgs button.small.add,
+.multiplebgs .button.small.add {
   padding-left: 22px;
   padding-right: 8px;
-}
-
-/* + Add + */
-.multiplebgs input[type=submit].small.bg-icon.add,
-.multiplebgs button.small.bg-icon.add,
-.multiplebgs .button.small.bg-icon.add {
   background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
     url(../images/button.svg);
@@ -254,9 +247,9 @@ ul.button-group li.last .button {
       #fcfcfc 1px,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.add:active,
-.multiplebgs button.small.bg-icon.add:active,
-.multiplebgs .button.small.bg-icon.add:active {
+.multiplebgs input[type=submit].small.add:active,
+.multiplebgs button.small.add:active,
+.multiplebgs .button.small.add:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -70px;
 }
 
@@ -273,10 +266,12 @@ button.remove:active,
 .button.remove:active {
   color: #b0b0b0;
 }
-.multiplebgs input[type=submit].small.bg-icon.remove,
-.multiplebgs input[type=reset].small.bg-icon.remove,
-.multiplebgs button.small.bg-icon.remove,
-.multiplebgs .button.small.bg-icon.remove {
+.multiplebgs input[type=submit].small.remove,
+.multiplebgs input[type=reset].small.remove,
+.multiplebgs button.small.remove,
+.multiplebgs .button.small.remove {
+  padding-left: 22px;
+  padding-right: 8px;
   background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
     url(../images/button.svg);
@@ -307,18 +302,20 @@ button.remove:active,
       #fcfcfc 1px,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.remove:active,
-.multiplebgs input[type=reset].small.bg-icon.remove:active,
-.multiplebgs button.small.bg-icon.remove:active,
-.multiplebgs .button.small.bg-icon.remove:active {
+.multiplebgs input[type=submit].small.remove:active,
+.multiplebgs input[type=reset].small.remove:active,
+.multiplebgs button.small.remove:active,
+.multiplebgs .button.small.remove:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -166px;
 }
 
 /* √ Confirm √ */
-.multiplebgs input[type=submit].small.bg-icon.confirm,
-.multiplebgs input[type=reset].small.bg-icon.confirm,
-.multiplebgs button.small.bg-icon.confirm,
-.multiplebgs .button.small.bg-icon.confirm {
+.multiplebgs input[type=submit].small.confirm,
+.multiplebgs input[type=reset].small.confirm,
+.multiplebgs button.small.confirm,
+.multiplebgs .button.small.confirm {
+  padding-left: 22px;
+  padding-right: 8px;
   background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
     url(../images/button.svg);
@@ -349,18 +346,20 @@ button.remove:active,
       #fcfcfc 1px,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.confirm:active,
-.multiplebgs input[type=reset].small.bg-icon.confirm:active,
-.multiplebgs button.small.bg-icon.confirm:active,
-.multiplebgs .button.small.bg-icon.confirm:active {
+.multiplebgs input[type=submit].small.confirm:active,
+.multiplebgs input[type=reset].small.confirm:active,
+.multiplebgs button.small.confirm:active,
+.multiplebgs .button.small.confirm:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -262px;
 }
 
 /* ↓ Download ↓ */
-.multiplebgs input[type=submit].small.bg-icon.download,
-.multiplebgs input[type=reset].small.bg-icon.download,
-.multiplebgs button.small.bg-icon.download,
-.multiplebgs .button.small.bg-icon.download {
+.multiplebgs input[type=submit].small.download,
+.multiplebgs input[type=reset].small.download,
+.multiplebgs button.small.download,
+.multiplebgs .button.small.download {
+  padding-left: 22px;
+  padding-right: 8px;
   background:
     url(../images/inputs-icons.png) no-repeat -5px -294px,
     url(../images/button.svg);
@@ -391,18 +390,20 @@ button.remove:active,
       #fcfcfc 1px,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.download:active,
-.multiplebgs input[type=reset].small.bg-icon.download:active,
-.multiplebgs button.small.bg-icon.download:active,
-.multiplebgs .button.small.bg-icon.download:active {
+.multiplebgs input[type=submit].small.download:active,
+.multiplebgs input[type=reset].small.download:active,
+.multiplebgs button.small.download:active,
+.multiplebgs .button.small.download:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -358px;
 }
 
 /* ↑ Upload ↑ */
-.multiplebgs input[type=submit].small.bg-icon.upload,
-.multiplebgs input[type=reset].small.bg-icon.upload,
-.multiplebgs button.small.bg-icon.upload,
-.multiplebgs .button.small.bg-icon.upload {
+.multiplebgs input[type=submit].small.upload,
+.multiplebgs input[type=reset].small.upload,
+.multiplebgs button.small.upload,
+.multiplebgs .button.small.upload {
+  padding-left: 22px;
+  padding-right: 8px;
   background:
     url(../images/inputs-icons.png) no-repeat -5px -390px,
     url(../images/button.svg);
@@ -433,9 +434,9 @@ button.remove:active,
       #fcfcfc 1px,
       #e6e6e6);
 }
-.multiplebgs input[type=submit].small.bg-icon.upload:active,
-.multiplebgs input[type=reset].small.bg-icon.upload:active,
-.multiplebgs button.small.bg-icon.upload:active,
-.multiplebgs .button.small.bg-icon.upload:active {
+.multiplebgs input[type=submit].small.upload:active,
+.multiplebgs input[type=reset].small.upload:active,
+.multiplebgs button.small.upload:active,
+.multiplebgs .button.small.upload:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -454px;
 }
