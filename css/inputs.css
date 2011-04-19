@@ -107,7 +107,7 @@ button,
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
   border-radius: 2em;
-  border: 1px solid #828282;
+  border: 1px solid #aaa;
   
   font-weight: bold;
   font-size: 14px;
@@ -149,7 +149,7 @@ button:hover,
     #fff,
     #efefef);
   
-  border-color: #666;
+  border-color: #888;
   
   color: #000;
 }
