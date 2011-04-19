@@ -66,9 +66,9 @@ input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
-a:link { -webkit-tap-highlight-color: #FF5E99; }
+::-moz-selection{ background: #f06; color:#fff; text-shadow: none; }
+::selection { background:#f06; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #f06; }
 
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
@@ -113,42 +113,27 @@ a:hover { color: #036; }
 body {
   font-size: 16px;
   line-height: 1.5;
-  font-family: Lato;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   text-align: center;
 }
 a:link, a:visited {
   color: #f06;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
   color: #0cf;
 }
 small {
   font-size: 87.5%;
 }
 
-header {
-  height: 160px;
-  background: #212121;
-  overflow: hidden;
-}
-h1 {
-  text-transform: uppercase;
-  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  font-size: 160px;
-  line-height: 1;
-  position: relative;
-  top: 50px;
-  color: #fff;
-}
-
 #main {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 #examples {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .example {
   margin-bottom: 20px;
@@ -157,20 +142,9 @@ h1 {
 ul.button-group {
   display: inline-block;
 }
-#examples pre {
-  display: inline-block;
-  background: #ffc;
-  font-size: 0.875em;
-  color: #514721;
-  text-align: left;
-  line-height: 1.5;
-}
-.example .js-hide {
-  margin: 10px 0 20px 0;
-}
 .textfield-example, .textarea-example {
   width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 .textarea-example {
   position: relative;
@@ -182,6 +156,9 @@ footer {
 }
 #license {
   float: left;
+}
+footer .logo {
+  float: right;
 }
 
 

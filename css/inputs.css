@@ -31,11 +31,9 @@ textarea {
   border-top: 1px solid #aaa;
   
   background: #fcfcfc;
-  color: #aaa;
 }
 input:focus, textarea:focus {
   background: #fff;
-  color: #444;
 }
 input[type=checkbox] {
   padding: 0;
@@ -102,6 +100,10 @@ button,
     #fff,
     #fcfcfc 1px,
     #e6e6e6);
+  background: -o-linear-gradient(top,
+    #fff,
+    #fcfcfc 1px,
+    #e6e6e6);
   -pie-background: linear-gradient(top,
     #fff,
     #fcfcfc 1px,
@@ -149,6 +151,9 @@ button:hover,
     #fff,
     #efefef);
   background: -moz-linear-gradient(top,
+    #fff,
+    #efefef);
+  background: -o-linear-gradient(top,
     #fff,
     #efefef);
   -pie-background: linear-gradient(top,
@@ -205,6 +210,8 @@ ul.button-group li {
 }
 ul.button-group li {
   float: left;
+  margin-left: 0;
+  margin-right: 0;
 }
 ul.button-group input[type=submit],
 ul.button-group input[type=button],
@@ -214,6 +221,8 @@ ul.button-group .button {
   -moz-border-radius:     0;
   -webkit-border-radius:  0;
   border-radius:          0;
+  margin-left: 0;
+  margin-right: 0;
 }
 ul.button-group li.first input[type=submit],
 ul.button-group li.first input[type=button],
@@ -242,20 +251,29 @@ ul.button-group li.last .button {
   border-left-width: 0;
 }
 
+/* PAIRED BUTTONS - for groups with only 2 buttons */
+
+ul.button-group.pair li.first input[type=submit],
+ul.button-group.pair li.first input[type=button],
+ul.button-group.pair li.first input[type=reset],
+ul.button-group.pair li.first button,
+ul.button-group.pair li.first .button {
+  border-right-width: 1px;
+}
+
 /* ICONS */
 
-/* + Add + */
-.multiplebgs input[type=submit].small.add,
-.multiplebgs input[type=button].small.add,
-.multiplebgs button.small.add,
-.multiplebgs .button.small.add {
+.multiplebgs input[type=submit].icon,
+.multiplebgs input[type=button].icon,
+.multiplebgs button.icon,
+.multiplebgs .button.icon {
   padding-left: 22px;
   padding-right: 8px;
   background:
-    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    url(../images/inputs-icons.png) no-repeat,
     url(../images/button.svg);
   background: 
-    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    url(../images/inputs-icons.png) no-repeat,
     -webkit-gradient(
       linear,
       left top,
@@ -263,23 +281,38 @@ ul.button-group li.last .button {
       from(#fff), to(#e6e6e6),
       color-stop(5%, #fcfcfc));
   background:
-    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    url(../images/inputs-icons.png) no-repeat,
     -webkit-linear-gradient(top,
       #fff,
       #fcfcfc 1px,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    url(../images/inputs-icons.png) no-repeat,
     -moz-linear-gradient(top,
       #fff,
       #fcfcfc 1px,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    url(../images/inputs-icons.png) no-repeat,
+    -o-linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
       #e6e6e6);
+}
+
+/* + Add + (default) */
+
+.multiplebgs input[type=submit].add,
+.multiplebgs input[type=button].add,
+.multiplebgs button.add,
+.multiplebgs .button.add {
+  background-position: -5px -6px, 0 0;
 }
 .multiplebgs input[type=submit].small.add:active,
 .multiplebgs input[type=button].small.add:active,
@@ -308,37 +341,7 @@ button.remove:active,
 .multiplebgs input[type=reset].small.remove,
 .multiplebgs button.small.remove,
 .multiplebgs .button.small.remove {
-  padding-left: 22px;
-  padding-right: 8px;
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -102px,
-    url(../images/button.svg);
-  background: 
-    url(../images/inputs-icons.png) no-repeat -5px -102px,
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#fff), to(#e6e6e6),
-      color-stop(5%, #fcfcfc));
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -102px,
-    -webkit-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -102px,
-    -moz-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -102px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
+  background-position: -5px -102px, 0 0;
 }
 .multiplebgs input[type=submit].small.remove:active,
 .multiplebgs input[type=button].small.remove:active,
@@ -353,37 +356,7 @@ button.remove:active,
 .multiplebgs input[type=button].small.confirm,
 .multiplebgs button.small.confirm,
 .multiplebgs .button.small.confirm {
-  padding-left: 22px;
-  padding-right: 8px;
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -198px,
-    url(../images/button.svg);
-  background: 
-    url(../images/inputs-icons.png) no-repeat -5px -198px,
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#fff), to(#e6e6e6),
-      color-stop(5%, #fcfcfc));
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -198px,
-    -webkit-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -198px,
-    -moz-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -198px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
+  background-position: -5px -198px, 0 0;
 }
 .multiplebgs input[type=submit].small.confirm:active,
 .multiplebgs input[type=button].small.confirm:active,
@@ -397,37 +370,7 @@ button.remove:active,
 .multiplebgs input[type=button].small.download,
 .multiplebgs button.small.download,
 .multiplebgs .button.small.download {
-  padding-left: 22px;
-  padding-right: 8px;
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -294px,
-    url(../images/button.svg);
-  background: 
-    url(../images/inputs-icons.png) no-repeat -5px -294px,
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#fff), to(#e6e6e6),
-      color-stop(5%, #fcfcfc));
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -294px,
-    -webkit-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -294px,
-    -moz-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -294px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
+  background-position: -5px -294px, 0 0;
 }
 .multiplebgs input[type=submit].small.download:active,
 .multiplebgs input[type=button].small.download:active,
@@ -441,41 +384,39 @@ button.remove:active,
 .multiplebgs input[type=button].small.upload,
 .multiplebgs button.small.upload,
 .multiplebgs .button.small.upload {
-  padding-left: 22px;
-  padding-right: 8px;
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -390px,
-    url(../images/button.svg);
-  background: 
-    url(../images/inputs-icons.png) no-repeat -5px -390px,
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#fff), to(#e6e6e6),
-      color-stop(5%, #fcfcfc));
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -390px,
-    -webkit-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -390px,
-    -moz-linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-  background:
-    url(../images/inputs-icons.png) no-repeat -5px -390px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
+  background-position: -5px -390px, 0 0;
 }
 .multiplebgs input[type=submit].small.upload:active,
 .multiplebgs input[type=button].small.upload:active,
 .multiplebgs button.small.upload:active,
 .multiplebgs .button.small.upload:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -454px;
+}
+
+/* ↑ Like ↑ */
+.multiplebgs input[type=submit].small.like,
+.multiplebgs input[type=button].small.like,
+.multiplebgs button.small.like,
+.multiplebgs .button.small.like {
+  background-position: -5px -486px, 0 0;
+}
+.multiplebgs input[type=submit].small.like:active,
+.multiplebgs input[type=button].small.like:active,
+.multiplebgs button.small.like:active,
+.multiplebgs .button.small.like:active {
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -550px;
+}
+
+/* ↑ Dislike ↑ */
+.multiplebgs input[type=submit].small.dislike,
+.multiplebgs input[type=button].small.dislike,
+.multiplebgs button.small.dislike,
+.multiplebgs .button.small.dislike {
+  background-position: -5px -582px, 0 0;
+}
+.multiplebgs input[type=submit].small.dislike:active,
+.multiplebgs input[type=button].small.dislike:active,
+.multiplebgs button.small.dislike:active,
+.multiplebgs .button.small.dislike:active {
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -646px;
 }
