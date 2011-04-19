@@ -73,7 +73,7 @@ a:link { -webkit-tap-highlight-color: #f06; }
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
-body, select, input, textarea {  color: #444; }
+body, select {  color: #444; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
