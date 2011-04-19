@@ -104,8 +104,6 @@ To Do:
 ------
 * More IE testing!
 * Add Opera gradient support
-* Add input[type=button] support
-* Remove unnecessary input[type=reset] (from icon selectors)
 * Add search button
 * Style input[type=search]
 * input[type=file] & select styling?
