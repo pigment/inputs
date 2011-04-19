@@ -1,30 +1,36 @@
 Inputs
 ======
-A set of nice base styles for buttons and form elements, to aid prototyping web apps and the like. See the [demo here](http://pigment.github.com/inputs/). The aim is to have a stylesheet (+2 for IE/IE6) that can be simply dropped in to your project and work, with minimal adjustments to your markup.
-
-Quick Start
------------
-Download using the link above. Include the stylesheet, icon file, Modernizr, and CSS3PIE to your project.
-
-    <link rel="stylesheet" href="css/inputs.css">  
-    <!--[if lte IE 8]>  
-      <link rel="stylesheet" href="css/ie.css">  
-    <![endif]-->  
-    <!--[if lte IE 6]>  
-      <link rel="stylesheet" href="css/ie6.css">  
-    <![endif]-->
-    <script src="js/modernizr-1.7.min.js"></script>
-
-Create a form and enjoy the style!
-
-**Inputs** is designed to be modular, so there's need to worry about deleting blocks of styles you don't need.
+A set of nice base styles for buttons and form elements, to aid prototyping web apps and the like. See the [demo here](http://pigment.github.com/inputs/). The aim is to have a stylesheet (+2 for IE/IE6) that can be simply dropped in to your project and work, with minimal adjustments to your markup. It's designed to be modular, so there's need to worry about deleting blocks of selectors/properties you don't need.
 
 Required components (included):
 
-* [Modernizr](http://www.modernizr.com/) for icon styles (makes use of multiple background images)
-* [CSS3PIE](http://css3pie.com/) for rounded corners and icons in IE8 and below.
+* [Modernizr](http://www.modernizr.com/) for icon styles (Inputs makes use of multiple background images, for minimal markup)
+* [CSS3PIE](http://css3pie.com/) for rounded corners, gradients and icons in IE8 and below.
 
 Recommends [HTML5 Boilerplate](http://html5boilerplate.com/).
+
+Quick Start
+-----------
+### 1. Download using the link above.
+
+### 2. Include the relevant files
+
+i.e. the inputs stylesheet (plus the ie styles), and Modernizr (if you want to icons):
+
+    <link rel="stylesheet" href="PATH_TO/inputs.css">  
+    <!--[if lte IE 8]>  
+      <link rel="stylesheet" href="PATH_TO/ie.css">  
+    <![endif]-->  
+    <!--[if lte IE 6]>  
+      <link rel="stylesheet" href="PATH_TO/ie6.css">  
+    <![endif]-->
+    <script src="PATH_TO/modernizr-1.7.min.js"></script>
+
+### 3. Edit the _behavior_ path in ie.css
+
+Note that this should be relative to the HTML document or absolute from the document root (_not_ relative to the stylesheet). This will enable buttons and input fields to look similar in IE. For more info see the docs on [CSS3PIE](http://css3pie.com/documentation/known-issues/#relative-paths).
+
+### 4. Create a form and enjoy the style!
 
 Code Examples
 --------
@@ -39,11 +45,11 @@ Code Examples
 
     <a href="#" class="small button">Small Button</a>
 
-### Icons
+### .icon
 
-Icons exist for a set of actions, and can be used with any small button. Possible icon classes: add, remove, confirm, download, upload. Check out [the demo](http://pigment.github.com/inputs/) to see these examples for real.
+Icons exist for a set of actions, and can be used with any small button (they looked a bit naff with big buttons). Add the **icon** class to a button, and one of the following: **add**, **remove**, **confirm**, **download**, **upload**, **like**, **dislike**. Check out [the demo](http://pigment.github.com/inputs/) to see these examples for real.
 
-    <a href="#" class="small add button">Add Button</a>
+    <a href="#" class="small add icon button">Add Button</a>
 
 
 ### Button Groups
