@@ -18,13 +18,6 @@ button.small,
 }
 
 /* ICONS (if PIE.htc) */
-input[type=submit].small.bg-icon,
-input[type=reset].small.bg-icon,
-button.small.bg-icon,
-.button.small.bg-icon {
-  padding-left: 22px;
-  padding-right: 8px;
-}
 
 /* + Add + */
 input[type=submit].small.bg-icon.add,
