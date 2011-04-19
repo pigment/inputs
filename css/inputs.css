@@ -2,6 +2,7 @@
  * Inputs
  * Base form styles  */
 input[type=submit]:focus,
+input[type="button"],
 input[type=reset]:focus,
 button:focus,
 .button:focus {
@@ -60,6 +61,7 @@ input:focus, textarea:focus {
  * =BUTTONS */
 
 input[type=submit],
+input[type="button"],
 input[type=reset],
 button,
 .button,
@@ -120,12 +122,14 @@ button,
 }
 
 input[type=submit],
+input[type="button"],
 input[type=reset],
 button,
 input.button {
   height: 32px;
 }
 input[type=submit]:hover,
+input[type="button"]:hover,
 input[type=reset]:hover,
 button:hover,
 .button:hover {
@@ -154,6 +158,7 @@ button:hover,
   color: #000;
 }
 input[type=submit]:active,
+input[type="button"]:active,
 input[type=reset]:active,
 button:active,
 .button:active {
@@ -165,6 +170,7 @@ button:active,
 /* SMALL */
 
 input[type=submit].small,
+input[type="button"].small,
 input[type=reset].small,
 button.small,
 .button.small {
@@ -178,6 +184,7 @@ button.small,
 }
 
 input[type=submit].small,
+input[type="button"].small,
 button.small,
 input.button.small {
   height: 22px;
@@ -195,6 +202,7 @@ ul.button-group li {
   float: left;
 }
 ul.button-group input[type=submit],
+ul.button-group input[type=button],
 ul.button-group input[type=reset],
 ul.button-group button,
 ul.button-group .button {
@@ -204,6 +212,7 @@ ul.button-group .button {
   border-radius:          0;
 }
 ul.button-group li.first input[type=submit],
+ul.button-group li.first input[type=button],
 ul.button-group li.first input[type=reset],
 ul.button-group li.first button,
 ul.button-group li.first .button {
@@ -216,6 +225,7 @@ ul.button-group li.first .button {
   border-left-width: 1px;
 }
 ul.button-group li.last input[type=submit],
+ul.button-group li.last input[type=button],
 ul.button-group li.last input[type=reset],
 ul.button-group li.last button,
 ul.button-group li.last .button {
@@ -231,6 +241,7 @@ ul.button-group li.last .button {
 
 /* + Add + */
 .multiplebgs input[type=submit].small.add,
+.multiplebgs input[type=button].small.add,
 .multiplebgs button.small.add,
 .multiplebgs .button.small.add {
   padding-left: 22px;
@@ -266,6 +277,7 @@ ul.button-group li.last .button {
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.add:active,
+.multiplebgs input[type=button].small.add:active,
 .multiplebgs button.small.add:active,
 .multiplebgs .button.small.add:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -70px;
@@ -273,18 +285,21 @@ ul.button-group li.last .button {
 
 /* - Remove - */
 input[type=submit].remove:hover,
+input[type=button].remove:hover,
 input[type=reset].remove:hover,
 button.remove:hover,
 .button.remove:hover {
   color: #900;
 }
 input[type=submit].remove:active,
+input[type=button].remove:active,
 input[type=reset].remove:active,
 button.remove:active,
 .button.remove:active {
   color: #b0b0b0;
 }
 .multiplebgs input[type=submit].small.remove,
+.multiplebgs input[type=button].small.remove,
 .multiplebgs input[type=reset].small.remove,
 .multiplebgs button.small.remove,
 .multiplebgs .button.small.remove {
@@ -321,6 +336,7 @@ button.remove:active,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.remove:active,
+.multiplebgs input[type=button].small.remove:active,
 .multiplebgs input[type=reset].small.remove:active,
 .multiplebgs button.small.remove:active,
 .multiplebgs .button.small.remove:active {
@@ -329,7 +345,7 @@ button.remove:active,
 
 /* √ Confirm √ */
 .multiplebgs input[type=submit].small.confirm,
-.multiplebgs input[type=reset].small.confirm,
+.multiplebgs input[type=button].small.confirm,
 .multiplebgs button.small.confirm,
 .multiplebgs .button.small.confirm {
   padding-left: 22px;
@@ -365,7 +381,7 @@ button.remove:active,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.confirm:active,
-.multiplebgs input[type=reset].small.confirm:active,
+.multiplebgs input[type=button].small.confirm:active,
 .multiplebgs button.small.confirm:active,
 .multiplebgs .button.small.confirm:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -262px;
@@ -373,7 +389,7 @@ button.remove:active,
 
 /* ↓ Download ↓ */
 .multiplebgs input[type=submit].small.download,
-.multiplebgs input[type=reset].small.download,
+.multiplebgs input[type=button].small.download,
 .multiplebgs button.small.download,
 .multiplebgs .button.small.download {
   padding-left: 22px;
@@ -409,7 +425,7 @@ button.remove:active,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.download:active,
-.multiplebgs input[type=reset].small.download:active,
+.multiplebgs input[type=button].small.download:active,
 .multiplebgs button.small.download:active,
 .multiplebgs .button.small.download:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -358px;
@@ -417,7 +433,7 @@ button.remove:active,
 
 /* ↑ Upload ↑ */
 .multiplebgs input[type=submit].small.upload,
-.multiplebgs input[type=reset].small.upload,
+.multiplebgs input[type=button].small.upload,
 .multiplebgs button.small.upload,
 .multiplebgs .button.small.upload {
   padding-left: 22px;
@@ -453,7 +469,7 @@ button.remove:active,
       #e6e6e6);
 }
 .multiplebgs input[type=submit].small.upload:active,
-.multiplebgs input[type=reset].small.upload:active,
+.multiplebgs input[type=button].small.upload:active,
 .multiplebgs button.small.upload:active,
 .multiplebgs .button.small.upload:active {
   background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -454px;
