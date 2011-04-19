@@ -104,6 +104,7 @@ To Do:
 ------
 * More IE testing!
 * Add Opera gradient support
+* Add less/sass support?
 * Add search button
 * Style input[type=search]
 * input[type=file] & select styling?
