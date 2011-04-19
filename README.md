@@ -1,6 +1,6 @@
 Inputs
 ======
-A set of nice base styles for buttons and form elements, to aid prototyping web apps and the like. See the [demo here](http://pigment.github.com/inputs/).
+A set of nice base styles for buttons and form elements, to aid prototyping web apps and the like. See the [demo here](http://pigment.github.com/inputs/). The aim is to have a stylesheet (+2 for IE/IE6) that can be simply dropped in to your project and work with minimal adjustments to your markup.
 
 Quick Start
 -----------
@@ -103,7 +103,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 To Do:
 ------
 * More IE testing!
-* Add Opera gradient support
 * Add less/sass support?
 * Add search button
 * Style input[type=search]

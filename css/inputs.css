@@ -102,6 +102,10 @@ button,
     #fff,
     #fcfcfc 1px,
     #e6e6e6);
+  background: -o-linear-gradient(top,
+    #fff,
+    #fcfcfc 1px,
+    #e6e6e6);
   -pie-background: linear-gradient(top,
     #fff,
     #fcfcfc 1px,
@@ -149,6 +153,9 @@ button:hover,
     #fff,
     #efefef);
   background: -moz-linear-gradient(top,
+    #fff,
+    #efefef);
+  background: -o-linear-gradient(top,
     #fff,
     #efefef);
   -pie-background: linear-gradient(top,
@@ -284,6 +291,12 @@ ul.button-group.pair li.first .button {
   background:
     url(../images/inputs-icons.png) no-repeat,
     -moz-linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+  background:
+    url(../images/inputs-icons.png) no-repeat,
+    -o-linear-gradient(top,
       #fff,
       #fcfcfc 1px,
       #e6e6e6);
