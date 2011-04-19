@@ -37,6 +37,11 @@ input:focus, textarea:focus {
   background: #fff;
   color: #444;
 }
+input[type=checkbox] {
+  padding: 0;
+  border: none;
+  background: none;
+}
 
 .text-wrapper {
   margin-right: 10px; /* = textfield-padding-left + textfield-padding-right + textfield-border-left-width + textfield-border-right-width*/
