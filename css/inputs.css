@@ -31,11 +31,9 @@ textarea {
   border-top: 1px solid #aaa;
   
   background: #fcfcfc;
-  color: #aaa;
 }
 input:focus, textarea:focus {
   background: #fff;
-  color: #444;
 }
 input[type=checkbox] {
   padding: 0;
