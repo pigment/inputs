@@ -211,6 +211,7 @@ ul.button-group input[type=button],
 ul.button-group input[type=reset],
 ul.button-group button,
 ul.button-group .button {
+  border-right-width: 0;
   border-left-width: 0;
   -moz-border-radius:     0;
   -webkit-border-radius:  0;
@@ -227,7 +228,7 @@ ul.button-group li.first .button {
   -webkit-border-top-left-radius:     2em;
   border-top-left-radius:             2em;
   border-bottom-left-radius:          2em;
-  border-left-width: 1px;
+  border-width: 1px;
 }
 ul.button-group li.last input[type=submit],
 ul.button-group li.last input[type=button],
@@ -240,6 +241,7 @@ ul.button-group li.last .button {
   -webkit-border-top-right-radius:    2em;
   border-top-right-radius:            2em;
   border-bottom-right-radius:         2em;
+  border-width: 1px;
 }
 
 /* ICONS */
