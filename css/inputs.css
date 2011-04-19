@@ -19,7 +19,7 @@ input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
 input,
 textarea {
   font-size: 1em;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
   
   /* Avoid shorthand for padding - IE bug: http://prax.is/misc/ie8-bug-css-padding-input-element.html */
   padding: 4px;
@@ -174,7 +174,7 @@ button.small,
   font-weight: normal;
   font-size: 11px;
   line-height: 16px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
 }
 
 input[type=submit].small,
