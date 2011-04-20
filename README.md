@@ -15,7 +15,7 @@ Quick Start
 
 ### 2. Include the relevant files
 
-i.e. the inputs stylesheet (plus the ie styles), and Modernizr (if you want to icons):
+i.e. the inputs stylesheet (plus the ie styles), and Modernizr (if you want to use icons):
 
     <link rel="stylesheet" href="PATH_TO/inputs.css">  
     <!--[if lte IE 8]>  
