@@ -114,7 +114,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: Lato;
-  text-align: center;
 }
 a:link, a:visited {
   color: #f06;
@@ -154,9 +153,6 @@ h1 {
   margin-bottom: 20px;
   line-height: 1;
 }
-ul.button-group {
-  display: inline-block;
-}
 #examples pre {
   display: inline-block;
   background: #ffc;
@@ -170,7 +166,6 @@ ul.button-group {
 }
 .textfield-example, .textarea-example {
   width: 300px;
-  margin: 0 auto;
 }
 .textarea-example {
   position: relative;
