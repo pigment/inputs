@@ -67,7 +67,7 @@ Unfortunately rounded corners wont work for grouped buttons in IE :(
 
 Sometimes it's useful to allow text fields & textareas fill their containers. To lock a text input to its container, wrap it in an element with the classes "lock-x":
 
-    <div class="text-wrapper lock-x">
+    <div class="lock-x">
         <input type="text" placeholder="Text field that fills width" />
     </div>
 
