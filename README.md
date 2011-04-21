@@ -65,13 +65,11 @@ Unfortunately rounded corners wont work for grouped buttons in IE :(
 
 ### Locking Textfields
 
-Sometimes it's useful to allow text fields & textareas fill their containers. To lock a text input to its container, wrap it in an element with the classes "text-wrapper lock-x":
+Sometimes it's useful to allow text fields & textareas fill their containers. To lock a text input to its container, wrap it in an element with the classes "lock-x":
 
     <div class="text-wrapper lock-x">
         <input type="text" placeholder="Text field that fills width" />
     </div>
-
-Locking a textarea to the width and height of its container is a bit more tricky. Check out [the demo](http://pigment.github.com/inputs/) to see an example.
 
 Licenses
 --------

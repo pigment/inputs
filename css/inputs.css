@@ -19,18 +19,22 @@ input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
 
 input,
 textarea {
-  font-size: 1em;
+  font-size: 13px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  
+  height: 22px;
+  line-height: 22px;
   
   /* Avoid shorthand for padding - IE bug: http://prax.is/misc/ie8-bug-css-padding-input-element.html */
   padding: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
   
   border: 1px solid #ccc;
   border-top: 1px solid #aaa;
   
   background: #fcfcfc;
+}
+textarea {
+  height: auto;
 }
 input:focus, textarea:focus {
   background: #fff;
@@ -49,12 +53,13 @@ input[type=checkbox] {
   width: 100%;
 }
 
-/* Make sure textarea is wide to do this */
+/* Work in progress */
 .lock-y {
   margin-bottom: 14px; /* = textarea-padding-top + textarea-padding-bottom + textarea-border-top-width + textarea-border-bottom-width*/
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
 }
 .lock-y textarea {
   height: 100%;

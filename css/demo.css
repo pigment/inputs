@@ -141,6 +141,7 @@ small {
 }
 ul.button-group {
   display: inline-block;
+  *display: inline
 }
 .textfield-example, .textarea-example {
   width: 300px;
