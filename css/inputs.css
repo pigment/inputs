@@ -45,7 +45,7 @@ input[type=checkbox] {
   background: none;
 }
 
-.text-wrapper {
+.lock-x {
   margin-right: 10px; /* = textfield-padding-left + textfield-padding-right + textfield-border-left-width + textfield-border-right-width*/
 }
 .lock-x input,
