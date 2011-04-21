@@ -31,6 +31,12 @@ button.icon,
 .button.icon {
   padding-left: 22px;
   padding-right: 8px;
+  -pie-background:
+    url(/images/inputs-icons.png) no-repeat 0 0,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
 }
 
 /* + Add + */
@@ -39,7 +45,7 @@ input[type=button].small.add,
 button.small.add,
 .button.small.add {
   -pie-background:
-    url(../images/inputs-icons.png) no-repeat -5px -6px,
+    url(/images/inputs-icons.png) no-repeat -5px -6px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
@@ -52,7 +58,7 @@ input[type=reset].small.remove,
 button.small.remove,
 .button.small.remove {
   -pie-background:
-    url(../images/inputs-icons.png) no-repeat -5px -102px,
+    url(/images/inputs-icons.png) no-repeat -5px -102px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
@@ -64,7 +70,7 @@ input[type=button].small.confirm,
 button.small.confirm,
 .button.small.confirm {
   -pie-background:
-    url(../images/inputs-icons.png) no-repeat -5px -198px,
+    url(/images/inputs-icons.png) no-repeat -5px -198px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
@@ -76,7 +82,7 @@ input[type=button].small.download,
 button.small.download,
 .button.small.download {
   -pie-background:
-    url(../images/inputs-icons.png) no-repeat -5px -294px,
+    url(/images/inputs-icons.png) no-repeat -5px -294px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
@@ -88,7 +94,7 @@ input[type=button].small.upload,
 button.small.upload,
 .button.small.upload {
   -pie-background:
-    url(../images/inputs-icons.png) no-repeat -5px -390px,
+    url(/images/inputs-icons.png) no-repeat -5px -390px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
@@ -100,7 +106,7 @@ input[type=button].small.like,
 button.small.like,
 .button.small.like {
   -pie-background:
-    url(../images/inputs-icons.png) no-repeat -5px -486px,
+    url(/images/inputs-icons.png) no-repeat -5px -486px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
@@ -113,7 +119,7 @@ input[type=button].small.dislike,
 button.small.dislike,
 .button.small.dislike {
   -pie-background:
-    url(../images/inputs-icons.png) no-repeat -5px -582px,
+    url(/images/inputs-icons.png) no-repeat -5px -582px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
