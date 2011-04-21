@@ -114,7 +114,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  text-align: center;
 }
 a:link, a:visited {
   color: #f06;
@@ -139,13 +138,8 @@ small {
   margin-bottom: 20px;
   line-height: 1;
 }
-ul.button-group {
-  display: inline-block;
-  *display: inline
-}
 .textfield-example, .textarea-example {
   width: 300px;
-  margin: 0 auto 20px;
 }
 .textarea-example {
   position: relative;
