@@ -1,3 +1,11 @@
+input, textarea {
+  line-height: 22px;
+}
+
+.lock-y {
+  *position: static;
+}
+
 /*
  * =BUTTONS */
 
@@ -17,10 +25,6 @@ input[type=reset].small,
 button.small,
 .button.small {
   line-height: 15px;
-}
-
-.lock-y {
-  *position: static;
 }
 
 /* ICONS (if PIE.htc) */

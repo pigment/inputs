@@ -23,7 +23,6 @@ textarea {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
   
   height: 22px;
-  line-height: 22px;
   
   /* Avoid shorthand for padding - IE bug: http://prax.is/misc/ie8-bug-css-padding-input-element.html */
   padding: 4px;
