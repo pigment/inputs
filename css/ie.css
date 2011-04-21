@@ -2,6 +2,7 @@
  * =BUTTONS */
 
 input[type=submit],
+input[type=button],
 input[type=reset],
 button,
 .button,
@@ -11,6 +12,7 @@ button,
   behavior: url(PIE.htc);
 }
 input[type=submit].small,
+input[type=button].small,
 input[type=reset].small,
 button.small,
 .button.small {
@@ -23,10 +25,19 @@ button.small,
 
 /* ICONS (if PIE.htc) */
 
+input[type=submit].icon,
+input[type=button].icon,
+button.icon,
+.button.icon {
+  padding-left: 22px;
+  padding-right: 8px;
+}
+
 /* + Add + */
-input[type=submit].small.bg-icon.add,
-button.small.bg-icon.add,
-.button.small.bg-icon.add {
+input[type=submit].small.add,
+input[type=button].small.add,
+button.small.add,
+.button.small.add {
   -pie-background:
     url(../images/inputs-icons.png) no-repeat -5px -6px,
     linear-gradient(top,
@@ -35,10 +46,11 @@ button.small.bg-icon.add,
       #e6e6e6);
 }
 /* - Remove - */
-input[type=submit].small.bg-icon.remove,
-input[type=reset].small.bg-icon.remove,
-button.small.bg-icon.remove,
-.button.small.bg-icon.remove {
+input[type=submit].small.remove,
+input[type=button].small.remove,
+input[type=reset].small.remove,
+button.small.remove,
+.button.small.remove {
   -pie-background:
     url(../images/inputs-icons.png) no-repeat -5px -102px,
     linear-gradient(top,
@@ -47,10 +59,10 @@ button.small.bg-icon.remove,
       #e6e6e6);
 }
 /* √ Confirm √ */
-input[type=submit].small.bg-icon.confirm,
-input[type=reset].small.bg-icon.confirm,
-button.small.bg-icon.confirm,
-.button.small.bg-icon.confirm {
+input[type=submit].small.confirm,
+input[type=button].small.confirm,
+button.small.confirm,
+.button.small.confirm {
   -pie-background:
     url(../images/inputs-icons.png) no-repeat -5px -198px,
     linear-gradient(top,
@@ -59,10 +71,10 @@ button.small.bg-icon.confirm,
       #e6e6e6);
 }
 /* ↓ Download ↓ */
-input[type=submit].small.bg-icon.download,
-input[type=reset].small.bg-icon.download,
-button.small.bg-icon.download,
-.button.small.bg-icon.download {
+input[type=submit].small.download,
+input[type=button].small.download,
+button.small.download,
+.button.small.download {
   -pie-background:
     url(../images/inputs-icons.png) no-repeat -5px -294px,
     linear-gradient(top,
@@ -71,12 +83,37 @@ button.small.bg-icon.download,
       #e6e6e6);
 }
 /* ↑ Upload ↑ */
-input[type=submit].small.bg-icon.upload,
-input[type=reset].small.bg-icon.upload,
-button.small.bg-icon.upload,
-.button.small.bg-icon.upload {
+input[type=submit].small.upload,
+input[type=button].small.upload,
+button.small.upload,
+.button.small.upload {
   -pie-background:
     url(../images/inputs-icons.png) no-repeat -5px -390px,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
+/* ↑ Like ↑ */
+input[type=submit].small.like,
+input[type=button].small.like,
+button.small.like,
+.button.small.like {
+  -pie-background:
+    url(../images/inputs-icons.png) no-repeat -5px -486px,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
+
+/* ↑ Dislike ↑ */
+input[type=submit].small.dislike,
+input[type=button].small.dislike,
+button.small.dislike,
+.button.small.dislike {
+  -pie-background:
+    url(../images/inputs-icons.png) no-repeat -5px -582px,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
