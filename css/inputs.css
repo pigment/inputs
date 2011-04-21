@@ -85,7 +85,7 @@ button,
   background: #f3f3f3;
   
   /* SVG fallback. */
-  background-image: url(../images/button.svg);
+  background-image: url(/images/button.svg);
   
   /*
    * Gradient syntax is getting ridiculous!
@@ -146,7 +146,7 @@ input[type=reset]:hover,
 button:hover,
 .button:hover {
   background: #fff;
-  background: url(../images/button-hover.svg);
+  background: url(/images/button-hover.svg);
   background: -webkit-gradient(
     linear,
     left top,
@@ -275,10 +275,10 @@ ul.button-group.pair li.first .button {
   padding-left: 22px;
   padding-right: 8px;
   background:
-    url(../images/inputs-icons.png) no-repeat,
-    url(../images/button.svg);
+    url(/images/inputs-icons.png) no-repeat,
+    url(/images/button.svg);
   background: 
-    url(../images/inputs-icons.png) no-repeat,
+    url(/images/inputs-icons.png) no-repeat,
     -webkit-gradient(
       linear,
       left top,
@@ -286,25 +286,25 @@ ul.button-group.pair li.first .button {
       from(#fff), to(#e6e6e6),
       color-stop(5%, #fcfcfc));
   background:
-    url(../images/inputs-icons.png) no-repeat,
+    url(/images/inputs-icons.png) no-repeat,
     -webkit-linear-gradient(top,
       #fff,
       #fcfcfc 1px,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat,
+    url(/images/inputs-icons.png) no-repeat,
     -moz-linear-gradient(top,
       #fff,
       #fcfcfc 1px,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat,
+    url(/images/inputs-icons.png) no-repeat,
     -o-linear-gradient(top,
       #fff,
       #fcfcfc 1px,
       #e6e6e6);
   background:
-    url(../images/inputs-icons.png) no-repeat,
+    url(/images/inputs-icons.png) no-repeat,
     linear-gradient(top,
       #fff,
       #fcfcfc 1px,
@@ -323,7 +323,7 @@ ul.button-group.pair li.first .button {
 .multiplebgs input[type=button].small.add:active,
 .multiplebgs button.small.add:active,
 .multiplebgs .button.small.add:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -70px;
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -70px;
 }
 
 /* - Remove - */
@@ -353,7 +353,7 @@ button.remove:active,
 .multiplebgs input[type=reset].small.remove:active,
 .multiplebgs button.small.remove:active,
 .multiplebgs .button.small.remove:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -166px;
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -166px;
 }
 
 /* √ Confirm √ */
@@ -367,7 +367,7 @@ button.remove:active,
 .multiplebgs input[type=button].small.confirm:active,
 .multiplebgs button.small.confirm:active,
 .multiplebgs .button.small.confirm:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -262px;
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -262px;
 }
 
 /* ↓ Download ↓ */
@@ -381,7 +381,7 @@ button.remove:active,
 .multiplebgs input[type=button].small.download:active,
 .multiplebgs button.small.download:active,
 .multiplebgs .button.small.download:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -358px;
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -358px;
 }
 
 /* ↑ Upload ↑ */
@@ -395,7 +395,7 @@ button.remove:active,
 .multiplebgs input[type=button].small.upload:active,
 .multiplebgs button.small.upload:active,
 .multiplebgs .button.small.upload:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -454px;
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -454px;
 }
 
 /* ↑ Like ↑ */
@@ -409,7 +409,7 @@ button.remove:active,
 .multiplebgs input[type=button].small.like:active,
 .multiplebgs button.small.like:active,
 .multiplebgs .button.small.like:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -550px;
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -550px;
 }
 
 /* ↑ Dislike ↑ */
@@ -423,5 +423,5 @@ button.remove:active,
 .multiplebgs input[type=button].small.dislike:active,
 .multiplebgs button.small.dislike:active,
 .multiplebgs .button.small.dislike:active {
-  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -646px;
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -646px;
 }
