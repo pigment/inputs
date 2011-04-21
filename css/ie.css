@@ -17,6 +17,10 @@ button.small,
   line-height: 15px;
 }
 
+.lock-y {
+  *position: static;
+}
+
 /* ICONS (if PIE.htc) */
 
 /* + Add + */
