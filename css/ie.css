@@ -30,18 +30,14 @@ button.small,
 /* ICONS (if PIE.htc) */
 
 input[type=submit].icon,
-input[type=button].icon,
-button.icon,
-.button.icon {
+input[type=button].icon {
   padding-left: 22px;
   padding-right: 8px;
 }
 
 /* + Add + */
 input[type=submit].small.add,
-input[type=button].small.add,
-button.small.add,
-.button.small.add {
+input[type=button].small.add {
   -pie-background:
     url(/images/inputs-icons.png) no-repeat -5px -6px,
     linear-gradient(top,
@@ -52,9 +48,7 @@ button.small.add,
 /* - Remove - */
 input[type=submit].small.remove,
 input[type=button].small.remove,
-input[type=reset].small.remove,
-button.small.remove,
-.button.small.remove {
+input[type=reset].small.remove{
   -pie-background:
     url(/images/inputs-icons.png) no-repeat -5px -102px,
     linear-gradient(top,
@@ -64,9 +58,7 @@ button.small.remove,
 }
 /* √ Confirm √ */
 input[type=submit].small.confirm,
-input[type=button].small.confirm,
-button.small.confirm,
-.button.small.confirm {
+input[type=button].small.confirm {
   -pie-background:
     url(/images/inputs-icons.png) no-repeat -5px -198px,
     linear-gradient(top,
@@ -76,9 +68,7 @@ button.small.confirm,
 }
 /* ↓ Download ↓ */
 input[type=submit].small.download,
-input[type=button].small.download,
-button.small.download,
-.button.small.download {
+input[type=button].small.download {
   -pie-background:
     url(/images/inputs-icons.png) no-repeat -5px -294px,
     linear-gradient(top,
@@ -88,9 +78,7 @@ button.small.download,
 }
 /* ↑ Upload ↑ */
 input[type=submit].small.upload,
-input[type=button].small.upload,
-button.small.upload,
-.button.small.upload {
+input[type=button].small.upload {
   -pie-background:
     url(/images/inputs-icons.png) no-repeat -5px -390px,
     linear-gradient(top,
@@ -100,9 +88,7 @@ button.small.upload,
 }
 /* ↑ Like ↑ */
 input[type=submit].small.like,
-input[type=button].small.like,
-button.small.like,
-.button.small.like {
+input[type=button].small.like {
   -pie-background:
     url(/images/inputs-icons.png) no-repeat -5px -486px,
     linear-gradient(top,
@@ -113,9 +99,7 @@ button.small.like,
 
 /* ↑ Dislike ↑ */
 input[type=submit].small.dislike,
-input[type=button].small.dislike,
-button.small.dislike,
-.button.small.dislike {
+input[type=button].small.dislike {
   -pie-background:
     url(/images/inputs-icons.png) no-repeat -5px -582px,
     linear-gradient(top,

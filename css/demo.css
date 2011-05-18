@@ -138,6 +138,11 @@ small {
   margin-bottom: 20px;
   line-height: 1;
 }
+.example .cell {
+  float: left;
+  width: 25%;
+  margin-right: 1%;
+}
 .textfield-example, .textarea-example {
   width: 300px;
 }
