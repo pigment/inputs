@@ -3,7 +3,7 @@
  * Inputs
  * Base form styles  */
 input[type=submit]:focus,
-input[type="button"],
+input[type="button"]:focus,
 input[type=reset]:focus,
 button:focus,
 .button:focus {

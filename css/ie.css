@@ -17,93 +17,18 @@ button,
 .button:link, .button:visited {
   zoom: 1;
   overflow: visible;
-  behavior: url(PIE.htc);
+  
 }
 input[type=submit].small,
 input[type=button].small,
 input[type=reset].small,
-button.small,
-.button.small {
-  line-height: 15px;
+button.small {
+  line-height: 14px;
 }
 
-/* ICONS (if PIE.htc) */
-
-input[type=submit].icon,
-input[type=button].icon {
-  padding-left: 22px;
-  padding-right: 8px;
-}
-
-/* + Add + */
-input[type=submit].small.add,
-input[type=button].small.add {
-  -pie-background:
-    url(/images/inputs-icons.png) no-repeat -5px -6px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-}
-/* - Remove - */
-input[type=submit].small.remove,
-input[type=button].small.remove,
-input[type=reset].small.remove{
-  -pie-background:
-    url(/images/inputs-icons.png) no-repeat -5px -102px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-}
-/* √ Confirm √ */
-input[type=submit].small.confirm,
-input[type=button].small.confirm {
-  -pie-background:
-    url(/images/inputs-icons.png) no-repeat -5px -198px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-}
-/* ↓ Download ↓ */
-input[type=submit].small.download,
-input[type=button].small.download {
-  -pie-background:
-    url(/images/inputs-icons.png) no-repeat -5px -294px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-}
-/* ↑ Upload ↑ */
-input[type=submit].small.upload,
-input[type=button].small.upload {
-  -pie-background:
-    url(/images/inputs-icons.png) no-repeat -5px -390px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-}
-/* ↑ Like ↑ */
-input[type=submit].small.like,
-input[type=button].small.like {
-  -pie-background:
-    url(/images/inputs-icons.png) no-repeat -5px -486px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
-}
-
-/* ↑ Dislike ↑ */
-input[type=submit].small.dislike,
-input[type=button].small.dislike {
-  -pie-background:
-    url(/images/inputs-icons.png) no-repeat -5px -582px,
-    linear-gradient(top,
-      #fff,
-      #fcfcfc 1px,
-      #e6e6e6);
+/* IE 7 only */
+*:first-child+html button.small i.icon {
+  position: relative;
+  top: -1px;
+  left: -8px;
 }
