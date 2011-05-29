@@ -1,0 +1,36 @@
+$border_radius: 2px;
+$border_width: 1px;
+$button_height: 30px;
+
+@mixin button-base {
+  cursor: pointer;
+  overflow: visible;
+  display: inline-block;
+  width: auto;
+  height: 24px;
+  padding: 3px 1.5em;
+  
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: #444;
+  
+  background: #f3f3f3;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#E6E6E6');
+  border: $border_width solid #aaa;
+}
+
+@mixin small-button-base {
+  height: 16px;
+  padding: 2px 1em;
+  
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+
+  font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
+  vertical-align: baseline;
+}

@@ -1,0 +1,29 @@
+/* 
+-----------------------------------------------
+IE6
+----------------------------------------------- */
+
+* html button,
+* html .button,
+* html .button:link, * html .button:visited {
+  @include button-base;
+}
+* html input.small,
+* html button.small,
+* html .button.small,
+* html a.small:link, a.small:visited {
+  @include small-button-base;
+}
+* html input.small,
+* html button.small {
+  padding-top: 0;
+  padding-bottom: 1px;
+}
+* html .button.small,
+* html a.small:link, a.small:visited {
+  line-height: 14px;
+}
+
+* html button i.icon {
+  vertical-align: middle;
+}

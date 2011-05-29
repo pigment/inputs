@@ -1,0 +1,77 @@
+/* 
+-----------------------------------------------
+Button Group
+----------------------------------------------- */
+
+ul.button-group {
+  
+  list-style:none;
+  list-style-image: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    list-style:none;
+    list-style-image: none;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  input[type=submit],
+  input[type="button"],
+  input[type=reset],
+  button,
+  .button {
+    -moz-border-radius:     0;
+    -webkit-border-radius:  0;
+    border-radius:          0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  li.first {
+    input[type=submit],
+    input[type="button"],
+    input[type=reset],
+    button,
+    .button {
+      -moz-border-radius-topleft:         $border_radius;
+      -moz-border-radius-bottomleft:      $border_radius;
+      -webkit-border-bottom-left-radius:  $border_radius;
+      -webkit-border-top-left-radius:     $border_radius;
+      border-top-left-radius:             $border_radius;
+      border-bottom-left-radius:          $border_radius;
+      border-right-width: 0;
+    }
+  }
+  
+  li.last {
+    input[type=submit],
+    input[type="button"],
+    input[type=reset],
+    button,
+    .button {
+      -moz-border-radius-topright:        $border_radius;
+      -moz-border-radius-bottomright:     $border_radius;
+      -webkit-border-bottom-right-radius: $border_radius;
+      -webkit-border-top-right-radius:    $border_radius;
+      border-top-right-radius:            $border_radius;
+      border-bottom-right-radius:         $border_radius;
+      border-left-width: 0;
+    }
+  }
+}
+
+/* Paired buttons - for groups with only 2 buttons */
+
+ul.button-group.pair li.first {
+  input[type=submit],
+  input[type="button"],
+  input[type=reset],
+  button,
+  .button {
+    border-right-width: 1px;
+  }
+}
+/* @end */

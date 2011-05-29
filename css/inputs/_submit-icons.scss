@@ -1,0 +1,127 @@
+.multiplebgs input[type=submit].icon,
+.multiplebgs input[type=button].icon {
+  padding-left: 23px;
+  background:
+    url(/images/inputs-icons.png) no-repeat,
+    url(/images/button.svg);
+  background: 
+    url(/images/inputs-icons.png) no-repeat,
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fff), to(#e6e6e6),
+      color-stop(5%, #fcfcfc));
+  background:
+    url(/images/inputs-icons.png) no-repeat,
+    -webkit-linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+  background:
+    url(/images/inputs-icons.png) no-repeat,
+    -moz-linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+  background:
+    url(/images/inputs-icons.png) no-repeat,
+    -o-linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+  background:
+    url(/images/inputs-icons.png) no-repeat,
+    linear-gradient(top,
+      #fff,
+      #fcfcfc 1px,
+      #e6e6e6);
+}
+
+/* + Add + */
+
+.multiplebgs input[type=submit].icon.add,
+.multiplebgs input[type=button].icon.add {
+  padding-left: 23px;
+  background-position: -5px -6px, 0 0;
+}
+.multiplebgs input[type=submit].small.add:active,
+.multiplebgs input[type=button].small.add:active {
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -70px;
+}
+
+/* - Remove - */
+input[type=submit].remove:hover,
+input[type=button].remove:hover,
+input[type=reset].remove:hover,
+button.remove:hover,
+.button.remove:hover {
+  color: #900;
+}
+input[type=submit].remove:active,
+input[type=button].remove:active,
+input[type=reset].remove:active,
+button.remove:active,
+.button.remove:active {
+  color: #b0b0b0;
+}
+.multiplebgs input[type=submit].icon.small.remove,
+.multiplebgs input[type=button].icon.small.remove,
+.multiplebgs input[type=reset].icon.small.remove {
+  background-position: -5px -102px, 0 0;
+}
+.multiplebgs input[type=submit].icon.small.remove:active,
+.multiplebgs input[type=button].icon.small.remove:active,
+.multiplebgs input[type=reset].icon.small.remove:active {
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -166px;
+}
+
+/* √ Confirm √ */
+.multiplebgs input[type=submit].icon.small.confirm,
+.multiplebgs input[type=button].icon.small.confirm{
+  background-position: -5px -198px, 0 0;
+}
+.multiplebgs input[type=submit].icon.small.confirm:active,
+.multiplebgs input[type=button].icon.small.confirm:active{
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -262px;
+}
+
+/* ↓ Download ↓ */
+.multiplebgs input[type=submit].icon.small.download,
+.multiplebgs input[type=button].icon.small.download {
+  background-position: -5px -294px, 0 0;
+}
+.multiplebgs input[type=submit].icon.small.download:active,
+.multiplebgs input[type=button].icon.small.download:active {
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -358px;
+}
+
+/* ↑ Upload ↑ */
+.multiplebgs input[type=submit].icon.small.upload,
+.multiplebgs input[type=button].icon.small.upload {
+  background-position: -5px -390px, 0 0;
+}
+.multiplebgs input[type=submit].icon.small.upload:active,
+.multiplebgs input[type=button].icon.small.upload:active {
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -454px;
+}
+
+/* ↑ Like ↑ */
+.multiplebgs input[type=submit].icon.small.like,
+.multiplebgs input[type=button].icon.small.like {
+  background-position: -5px -486px, 0 0;
+}
+.multiplebgs input[type=submit].icon.small.like:active,
+.multiplebgs input[type=button].icon.small.like:active {
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -550px;
+}
+
+/* ↓ Dislike ↓ */
+.multiplebgs input[type=submit].icon.small.dislike,
+.multiplebgs input[type=button].icon.small.dislike {
+  background-position: -5px -582px, 0 0;
+}
+.multiplebgs input[type=submit].icon.small.dislike:active,
+.multiplebgs input[type=button].icon.small.dislike:active {
+  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -646px;
+}

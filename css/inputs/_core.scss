@@ -1,0 +1,87 @@
+/* 
+-----------------------------------------------
+Buttons
+----------------------------------------------- */
+
+/* Remove button padding in FF */
+input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
+
+input[type=submit],
+input[type="button"],
+input[type=reset],
+button,
+div.button,
+span.button,
+a.button,
+a.button:link, a.button:visited {
+  
+  @include button-base;
+  
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+    
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6), color-stop(5%, #fcfcfc));
+  background: -webkit-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
+  background: -moz-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
+  background: -o-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
+  background: -ms-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
+  background: linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
+  
+  -webkit-border-radius:  $border_radius;
+  -moz-border-radius:     $border_radius;
+  border-radius:          $border_radius;
+  
+  text-shadow: 0 1px 0 rgba(255,255,255, 1);
+  
+  /* HOVER */
+  
+  &:hover {
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
+    background: -webkit-linear-gradient(top, #fff, #efefef);
+    background: -moz-linear-gradient(top, #fff, #efefef);
+    background: -o-linear-gradient(top, #fff, #efefef);
+    background: -ms-linear-gradient(top, #ffffff, #efefef);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EFEFEF');
+    background: linear-gradient(top, #fff, #efefef);
+    
+    color: #222;
+  }
+  
+  /* ACTIVE */
+  
+  &:active {
+    filter: none;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #b0b0b0;
+    text-shadow: none;
+  }
+}
+input[type=submit],
+input[type="button"],
+input[type=reset],
+button,
+input.button {
+  height: $button_height + ($border_width * 2);
+}
+
+/* SMALL */
+
+input[type=submit].small,
+input[type="button"].small,
+input[type=reset].small,
+button.small,
+a.button.small,
+a.button.small:link, a.button.small:visited {
+  @include small-button-base;
+  *line-height: 14px;
+}
+input[type=submit].small,
+input[type="button"].small,
+button.small,
+input.button.small {
+  height: 22px;
+  *line-height: 12px;
+}
