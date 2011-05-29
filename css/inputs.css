@@ -91,17 +91,18 @@ a.button:link, a.button:visited {
   text-align: center;
   color: #444;
   background: #f3f3f3;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#E6E6E6');
   border: 1px solid #aaaaaa;
   overflow: hidden;
   *overflow: visible;
   *zoom: 1;
+  background: #f1f1f1;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6), color-stop(5%, #fcfcfc));
   background: -webkit-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
   background: -moz-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
   background: -o-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
   background: -ms-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
   background: linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e6e6e6');
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -116,14 +117,14 @@ a.button:link, a.button:visited {
   span.button:hover,
   a.button:hover,
   a.button:link:hover, a.button:visited:hover {
-    background: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#efefef));
+    background: #f7f7f7;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
     background: -webkit-linear-gradient(top, white, #efefef);
     background: -moz-linear-gradient(top, white, #efefef);
     background: -o-linear-gradient(top, white, #efefef);
     background: -ms-linear-gradient(top, white, #efefef);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EFEFEF');
     background: linear-gradient(top, white, #efefef);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#efefef');
     color: #222; }
   input[type=submit]:active,
   input[type="button"]:active,
@@ -386,8 +387,8 @@ IE6
   text-align: center;
   color: #444;
   background: #f3f3f3;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#E6E6E6');
-  border: 1px solid #aaaaaa; }
+  border: 1px solid #aaaaaa;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#E6E6E6'); }
 
 * html input.small,
 * html button.small,

@@ -12,21 +12,15 @@ input[type=reset],
 button,
 div.button,
 span.button,
-a.button,
-a.button:link, a.button:visited {
+a.button, a.button:link, a.button:visited {
   
   @include button-base;
   
   overflow: hidden;
   *overflow: visible;
   *zoom: 1;
-    
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6), color-stop(5%, #fcfcfc));
-  background: -webkit-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
-  background: -moz-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
-  background: -o-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
-  background: -ms-linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
-  background: linear-gradient(top, #ffffff, #fcfcfc 1px, #e6e6e6);
+  
+  @include gradient(#fcfcfc, #e6e6e6, #ffffff);
   
   -webkit-border-radius:  $border_radius;
   -moz-border-radius:     $border_radius;
@@ -37,15 +31,7 @@ a.button:link, a.button:visited {
   /* HOVER */
   
   &:hover {
-    background: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
-    background: -webkit-linear-gradient(top, #fff, #efefef);
-    background: -moz-linear-gradient(top, #fff, #efefef);
-    background: -o-linear-gradient(top, #fff, #efefef);
-    background: -ms-linear-gradient(top, #ffffff, #efefef);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EFEFEF');
-    background: linear-gradient(top, #fff, #efefef);
-    
+    @include gradient(#ffffff, #efefef);
     color: #222;
   }
   

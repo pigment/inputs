@@ -19,7 +19,6 @@ $button_height: 30px;
   color: #444;
   
   background: #f3f3f3;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#E6E6E6');
   border: $border_width solid #aaa;
 }
 
@@ -33,4 +32,30 @@ $button_height: 30px;
 
   font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
   vertical-align: baseline;
+}
+
+@mixin gradient($top: #fcfcfc, $bottom: #e6e6e6, $gloss: 0) {
+  
+  background: mix($top, $bottom);
+  
+  @if $gloss != 0 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6), color-stop(5%, #fcfcfc));
+
+    background: -webkit-linear-gradient(  top, $gloss, $top 1px, $bottom);
+    background: -moz-linear-gradient(     top, $gloss, $top 1px, $bottom);
+    background: -o-linear-gradient(       top, $gloss, $top 1px, $bottom);
+    background: -ms-linear-gradient(      top, $gloss, $top 1px, $bottom);
+    background: linear-gradient(          top, $gloss, $top 1px, $bottom);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top}', endColorstr='#{$bottom}');
+  }
+  @else {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6));
+
+    background: -webkit-linear-gradient(  top, $top, $bottom);
+    background: -moz-linear-gradient(     top, $top, $bottom);
+    background: -o-linear-gradient(       top, $top, $bottom);
+    background: -ms-linear-gradient(      top, $top, $bottom);
+    background: linear-gradient(          top, $top, $bottom);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top}', endColorstr='#{$bottom}');
+  }
 }
