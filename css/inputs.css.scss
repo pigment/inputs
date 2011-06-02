@@ -2,22 +2,13 @@
 -----------------------------------------------
 Inputs
 Nice base styles for form elements
-v0.24
-
-- Text fields
-- Buttons
-  - Small
-- Button group
-- Icons
+v0.3
 ----------------------------------------------- */
 
 @import "inputs/base";
-
-label, input[type="image"] { cursor: pointer; }
 
 @import "inputs/textfields";
 @import "inputs/core";
 @import "inputs/groups";
 @import "inputs/icons";
 @import "inputs/submit-icons";
-@import "inputs/ie6";

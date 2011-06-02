@@ -1,0 +1,20 @@
+/* 
+-----------------------------------------------
+Buttons
+----------------------------------------------- */
+
+label, input[type="image"] { cursor: pointer; }
+input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
+
+@include button-base;
+
+input.button,
+button {
+  height: 32px;
+}
+
+input.button.small,
+button.small {
+  height: 22px;
+  *line-height: 12px;
+}

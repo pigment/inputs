@@ -1,18 +1,10 @@
+@charset "UTF-8";
 /* 
 -----------------------------------------------
 Inputs
 Nice base styles for form elements
-v0.24
-
-- Text fields
-- Buttons
-  - Small
-- Button group
-- Icons
+v0.3
 ----------------------------------------------- */
-label, input[type="image"] {
-  cursor: pointer; }
-
 /* 
 -----------------------------------------------
 Text fields
@@ -64,19 +56,15 @@ input[type=checkbox] {
 -----------------------------------------------
 Buttons
 ----------------------------------------------- */
-/* Remove button padding in FF */
+label, input[type="image"] {
+  cursor: pointer; }
+
 input::-moz-focus-inner, button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-input[type=submit],
-input[type="button"],
-input[type=reset],
-button,
-div.button,
-span.button,
-a.button,
-a.button:link, a.button:visited {
+/* Remove button padding in FF */
+.button, a.button, button {
   cursor: pointer;
   overflow: visible;
   display: inline-block;
@@ -89,12 +77,8 @@ a.button:link, a.button:visited {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   text-decoration: none;
   text-align: center;
+  text-shadow: 0 1px 0 white;
   color: #444;
-  background: #f3f3f3;
-  border: 1px solid #aaaaaa;
-  overflow: hidden;
-  *overflow: visible;
-  *zoom: 1;
   background: #f1f1f1;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6), color-stop(5%, #fcfcfc));
   background: -webkit-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
@@ -106,17 +90,8 @@ a.button:link, a.button:visited {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  text-shadow: 0 1px 0 white;
-  /* HOVER */
-  /* ACTIVE */ }
-  input[type=submit]:hover,
-  input[type="button"]:hover,
-  input[type=reset]:hover,
-  button:hover,
-  div.button:hover,
-  span.button:hover,
-  a.button:hover,
-  a.button:link:hover, a.button:visited:hover {
+  border: 1px solid #aaaaaa; }
+  .button:hover, a.button:hover, button:hover {
     background: #f7f7f7;
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
     background: -webkit-linear-gradient(top, white, #efefef);
@@ -126,48 +101,29 @@ a.button:link, a.button:visited {
     background: linear-gradient(top, white, #efefef);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#efefef');
     color: #222; }
-  input[type=submit]:active,
-  input[type="button"]:active,
-  input[type=reset]:active,
-  button:active,
-  div.button:active,
-  span.button:active,
-  a.button:active,
-  a.button:link:active, a.button:visited:active {
+  .button:active, .button div.button.disabled, a.button:active, a.button div.button.disabled, button:active, button div.button.disabled {
     filter: none;
     background: #f9f9f9;
-    border: 1px solid #ccc;
+    border-color: #ccc;
     color: #b0b0b0;
     text-shadow: none; }
+  .button.small, a.button.small, button.small {
+    height: 16px;
+    padding: 2px 1em;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    *line-height: 14px;
+    font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+  * html .button:visited, * html a.button:visited, * html button:visited {
+    color: #444; }
 
-input[type=submit],
-input[type="button"],
-input[type=reset],
-button,
-input.button {
+input.button,
+button {
   height: 32px; }
 
-/* SMALL */
-input[type=submit].small,
-input[type="button"].small,
-input[type=reset].small,
-button.small,
-a.button.small,
-a.button.small:link, a.button.small:visited {
-  height: 16px;
-  padding: 2px 1em;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 16px;
-  font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  /* Lucida looks nice this size */
-  vertical-align: baseline;
-  *line-height: 14px; }
-
-input[type=submit].small,
-input[type="button"].small,
-button.small,
-input.button.small {
+input.button.small,
+button.small {
   height: 22px;
   *line-height: 12px; }
 
@@ -229,7 +185,6 @@ ul.button-group.pair li.first button,
 ul.button-group.pair li.first .button {
   border-right-width: 1px; }
 
-/* @end */
 /* 
 -----------------------------------------------
 Icons
@@ -240,6 +195,7 @@ button i.icon,
   *position: relative;
   *left: -8px;
   vertical-align: bottom;
+  _vertical-align: middle;
   margin: 0 5px 0 -8px;
   width: 16px;
   height: 16px;
@@ -365,52 +321,3 @@ button.remove:active,
 .multiplebgs input[type=submit].icon.small.dislike:active,
 .multiplebgs input[type=button].icon.small.dislike:active {
   background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -646px; }
-
-/* 
------------------------------------------------
-IE6
------------------------------------------------ */
-* html button,
-* html .button,
-* html .button:link, * html .button:visited {
-  cursor: pointer;
-  overflow: visible;
-  display: inline-block;
-  width: auto;
-  height: 24px;
-  padding: 3px 1.5em;
-  line-height: 24px;
-  font-weight: bold;
-  font-size: 14px;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-align: center;
-  color: #444;
-  background: #f3f3f3;
-  border: 1px solid #aaaaaa;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#E6E6E6'); }
-
-* html input.small,
-* html button.small,
-* html .button.small,
-* html a.small:link, a.small:visited {
-  height: 16px;
-  padding: 2px 1em;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 16px;
-  font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  /* Lucida looks nice this size */
-  vertical-align: baseline; }
-
-* html input.small,
-* html button.small {
-  padding-top: 0;
-  padding-bottom: 1px; }
-
-* html .button.small,
-* html a.small:link, a.small:visited {
-  line-height: 14px; }
-
-* html button i.icon {
-  vertical-align: middle; }

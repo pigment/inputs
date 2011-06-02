@@ -2,39 +2,103 @@ $border_radius: 2px;
 $border_width: 1px;
 $button_height: 30px;
 
-@mixin button-base {
-  cursor: pointer;
-  overflow: visible;
-  display: inline-block;
-  width: auto;
-  height: 24px;
-  padding: 3px 1.5em;
+@mixin button-base($support-ie6: true) {
   
-  line-height: 24px;
-  font-weight: bold;
-  font-size: 14px;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-align: center;
-  color: #444;
+  label, input[type="image"] { cursor: pointer; }
+  input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
   
-  background: #f3f3f3;
-  border: $border_width solid #aaa;
+  .button, button {
+    cursor: pointer;
+    overflow: visible;
+    display: inline-block;
+    width: auto;
+    height: 24px;
+    padding: 3px 1.5em;
+
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255, 1);
+    color: #444;
+
+    @include gradient(#fcfcfc, #e6e6e6, #ffffff);
+    
+    -webkit-border-radius:  $border_radius;
+    -moz-border-radius:     $border_radius;
+    border-radius:          $border_radius;
+    border: $border_width solid #aaa;
+
+    &:hover {
+      @include gradient(#ffffff, #efefef);
+      color: #222;
+    }
+
+    &:active, div.button.disabled {
+      filter: none;
+      background: #f9f9f9;
+      border-color: #ccc;
+      color: #b0b0b0;
+      text-shadow: none;
+    }
+    
+    &.small {
+      height: 16px;
+      padding: 2px 1em;
+
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 16px;
+      *line-height: 14px;
+      font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+    
+    @if($support-ie6) {
+      * html &:visited {
+        color: #444;
+      }
+    }
+  }
+  
+  a.button:visited {
+    color: #444;
+  }
+  
+  @if($support-ie6) {
+    input.button,
+    button {
+      height: 32px;
+    }
+    
+    input.button.small,
+    button.small {
+      height: 22px;
+      *line-height: 12px;
+    }
+  }
+  @else {
+    input[type=submit],
+    input[type="button"],
+    input[type=reset],
+    button {
+      @extend .button;
+      height: 32px;
+    }
+    
+    input.small[type=submit],
+    input.small[type="button"],
+    input.small[type=reset],
+    button.small {
+      height: 22px;
+      *line-height: 12px;
+    }
+  }
+  
 }
 
-@mixin small-button-base {
-  height: 16px;
-  padding: 2px 1em;
-  
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 16px;
-
-  font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif; /* Lucida looks nice this size */
-  vertical-align: baseline;
-}
-
-@mixin gradient($top: #fcfcfc, $bottom: #e6e6e6, $gloss: 0) {
+@mixin gradient($top, $bottom, $gloss: 0) {
   
   background: mix($top, $bottom);
   

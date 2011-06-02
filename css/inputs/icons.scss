@@ -1,3 +1,4 @@
+@import "base";
 /* 
 -----------------------------------------------
 Icons
@@ -10,6 +11,7 @@ button i.icon,
   *left: -8px;
   
   vertical-align: bottom;
+  _vertical-align: middle;
 
   margin: 0 5px 0 -8px;
   width: 16px;
