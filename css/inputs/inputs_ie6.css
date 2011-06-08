@@ -64,10 +64,7 @@ input::-moz-focus-inner, button::-moz-focus-inner {
   padding: 0; }
 
 /* Remove button padding in FF */
-.button, input[type=submit],
-input[type="button"],
-input[type=reset],
-button, button {
+.button, button {
   cursor: pointer;
   overflow: visible;
   display: inline-block;
@@ -94,10 +91,7 @@ button, button {
   -moz-border-radius: 2px;
   border-radius: 2px;
   border: 1px solid #aaaaaa; }
-  .button:hover, input[type=submit]:hover,
-  input[type="button"]:hover,
-  input[type=reset]:hover,
-  button:hover, button:hover {
+  .button:hover, button:hover {
     background: #f7f7f7;
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
     background: -webkit-linear-gradient(top, white, #efefef);
@@ -107,22 +101,13 @@ button, button {
     background: linear-gradient(top, white, #efefef);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#efefef');
     color: #222; }
-  .button:active, input[type=submit]:active,
-  input[type="button"]:active,
-  input[type=reset]:active,
-  button:active, .button.disabled, input.disabled[type=submit],
-  input.disabled[type="button"],
-  input.disabled[type=reset],
-  button.disabled, button:active, button.disabled {
+  .button:active, .button.disabled, button:active, button.disabled {
     filter: none;
     background: #f9f9f9;
     border-color: #ccc;
     color: #b0b0b0;
     text-shadow: none; }
-  .button.small, input.small[type=submit],
-  input.small[type="button"],
-  input.small[type=reset],
-  button.small, button.small {
+  .button.small, button.small {
     height: 16px;
     padding: 2px 1em;
     font-weight: normal;
@@ -130,19 +115,17 @@ button, button {
     line-height: 16px;
     *line-height: 14px;
     font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+  * html .button:visited, * html button:visited {
+    color: #444; }
 
 a.button:visited {
   color: #444; }
 
-input[type=submit],
-input[type="button"],
-input[type=reset],
+input.button,
 button {
   height: 32px; }
 
-input.small[type=submit],
-input.small[type="button"],
-input.small[type=reset],
+input.button.small,
 button.small {
   height: 22px;
   *line-height: 12px; }
@@ -166,14 +149,7 @@ ul.button-group {
   ul.button-group input[type="button"],
   ul.button-group input[type=reset],
   ul.button-group button,
-  ul.button-group .button,
-  ul.button-group input[type=submit],
-  ul.button-group
-  input[type="button"],
-  ul.button-group
-  input[type=reset],
-  ul.button-group
-  button {
+  ul.button-group .button {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -183,14 +159,7 @@ ul.button-group {
   ul.button-group li.first input[type="button"],
   ul.button-group li.first input[type=reset],
   ul.button-group li.first button,
-  ul.button-group li.first .button,
-  ul.button-group li.first input[type=submit],
-  ul.button-group li.first
-  input[type="button"],
-  ul.button-group li.first
-  input[type=reset],
-  ul.button-group li.first
-  button {
+  ul.button-group li.first .button {
     -moz-border-radius-topleft: 2px;
     -moz-border-radius-bottomleft: 2px;
     -webkit-border-bottom-left-radius: 2px;
@@ -202,14 +171,7 @@ ul.button-group {
   ul.button-group li.last input[type="button"],
   ul.button-group li.last input[type=reset],
   ul.button-group li.last button,
-  ul.button-group li.last .button,
-  ul.button-group li.last input[type=submit],
-  ul.button-group li.last
-  input[type="button"],
-  ul.button-group li.last
-  input[type=reset],
-  ul.button-group li.last
-  button {
+  ul.button-group li.last .button {
     -moz-border-radius-topright: 2px;
     -moz-border-radius-bottomright: 2px;
     -webkit-border-bottom-right-radius: 2px;
@@ -223,14 +185,7 @@ ul.button-group.pair li.first input[type=submit],
 ul.button-group.pair li.first input[type="button"],
 ul.button-group.pair li.first input[type=reset],
 ul.button-group.pair li.first button,
-ul.button-group.pair li.first .button,
-ul.button-group.pair li.first input[type=submit],
-ul.button-group.pair li.first
-input[type="button"],
-ul.button-group.pair li.first
-input[type=reset],
-ul.button-group.pair li.first
-button {
+ul.button-group.pair li.first .button {
   border-right-width: 1px; }
 
 /* 
@@ -238,11 +193,7 @@ button {
 Icons
 ----------------------------------------------- */
 button i.icon,
-.button i.icon,
-input[type=submit] i.icon,
-input[type="button"] i.icon,
-input[type=reset] i.icon,
-button i.icon {
+.button i.icon {
   display: inline-block;
   *position: relative;
   *left: -8px;
@@ -259,15 +210,9 @@ button i.icon, x:-moz-any-link, x:default {
   top: 1px;
   margin-top: -2px; }
 
-button.add i.icon, .button.add i.icon, input.add[type=submit] i.icon,
-input.add[type="button"] i.icon,
-input.add[type=reset] i.icon,
-button.add i.icon {
+button.add i.icon, .button.add i.icon {
   background-position: -8px -8px; }
-button.add:active i.icon, .button.add:active i.icon, input.add[type=submit]:active i.icon,
-input.add[type="button"]:active i.icon,
-input.add[type=reset]:active i.icon,
-button.add:active i.icon {
+button.add:active i.icon, .button.add:active i.icon {
   background-position: -8px -72px; }
 
 .remove i.icon {
@@ -315,22 +260,14 @@ input[type=submit].remove:hover,
 input[type=button].remove:hover,
 input[type=reset].remove:hover,
 button.remove:hover,
-.button.remove:hover,
-input.remove[type=submit]:hover,
-input.remove[type="button"]:hover,
-input.remove[type=reset]:hover,
-button.remove:hover {
+.button.remove:hover {
   color: #900; }
 
 input[type=submit].remove:active,
 input[type=button].remove:active,
 input[type=reset].remove:active,
 button.remove:active,
-.button.remove:active,
-input.remove[type=submit]:active,
-input.remove[type="button"]:active,
-input.remove[type=reset]:active,
-button.remove:active {
+.button.remove:active {
   color: #b0b0b0; }
 
 .multiplebgs input[type=submit].icon.small.remove,

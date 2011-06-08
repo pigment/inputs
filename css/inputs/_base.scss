@@ -2,7 +2,11 @@ $border_radius: 2px;
 $border_width: 1px;
 $button_height: 30px;
 
-@mixin button-base($support-ie6: true) {
+@mixin button-base($ie6-support: false) {
+/* 
+-----------------------------------------------
+Buttons
+----------------------------------------------- */
   
   label, input[type="image"] { cursor: pointer; }
   input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
@@ -36,7 +40,7 @@ $button_height: 30px;
       color: #222;
     }
 
-    &:active, div.button.disabled {
+    &:active, &.disabled {
       filter: none;
       background: #f9f9f9;
       border-color: #ccc;
@@ -55,7 +59,7 @@ $button_height: 30px;
       font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
     }
     
-    @if($support-ie6) {
+    @if($ie6-support) {
       * html &:visited {
         color: #444;
       }
@@ -66,7 +70,7 @@ $button_height: 30px;
     color: #444;
   }
   
-  @if($support-ie6) {
+  @if($ie6-support) {
     input.button,
     button {
       height: 32px;

@@ -1,0 +1,46 @@
+/* 
+-----------------------------------------------
+Icons
+----------------------------------------------- */
+button i.icon,
+.button i.icon {
+  display: inline-block;
+  *position: relative;
+  *left: -8px;
+  vertical-align: bottom;
+  _vertical-align: middle;
+  margin: 0 5px 0 -8px;
+  width: 16px;
+  height: 16px;
+  background: transparent url(/images/inputs-icons.png) no-repeat; }
+
+/* FF hack */
+button i.icon, x:-moz-any-link, x:default {
+  position: relative;
+  top: 1px;
+  margin-top: -2px; }
+
+button.add i.icon, .button.add i.icon {
+  background-position: -8px -8px; }
+button.add:active i.icon, .button.add:active i.icon {
+  background-position: -8px -72px; }
+
+.remove i.icon {
+  background-position: -8px -104px; }
+.remove:active i.icon {
+  background-position: -8px -168px; }
+
+.confirm i.icon {
+  background-position: -8px -200px; }
+.confirm:active i.icon {
+  background-position: -8px -264px; }
+
+.download i.icon {
+  background-position: -8px -296px; }
+.download:active i.icon {
+  background-position: -8px -360px; }
+
+.upload i.icon {
+  background-position: -8px -392px; }
+.upload:active i.icon {
+  background-position: -8px -456px; }

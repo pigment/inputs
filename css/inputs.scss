@@ -8,7 +8,9 @@ v0.3
 @import "inputs/base";
 
 @import "inputs/textfields";
-@import "inputs/core";
+
+@include button-base;
+
 @import "inputs/groups";
 @import "inputs/icons";
 @import "inputs/submit-icons";

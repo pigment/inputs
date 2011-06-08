@@ -1,0 +1,57 @@
+/* 
+-----------------------------------------------
+Button Group
+----------------------------------------------- */
+ul.button-group {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+  margin: 0; }
+  ul.button-group li {
+    list-style: none;
+    list-style-image: none;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  ul.button-group input[type=submit],
+  ul.button-group input[type="button"],
+  ul.button-group input[type=reset],
+  ul.button-group button,
+  ul.button-group .button {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0; }
+  ul.button-group li.first input[type=submit],
+  ul.button-group li.first input[type="button"],
+  ul.button-group li.first input[type=reset],
+  ul.button-group li.first button,
+  ul.button-group li.first .button {
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right-width: 0; }
+  ul.button-group li.last input[type=submit],
+  ul.button-group li.last input[type="button"],
+  ul.button-group li.last input[type=reset],
+  ul.button-group li.last button,
+  ul.button-group li.last .button {
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-width: 0; }
+
+/* Paired buttons - for groups with only 2 buttons */
+ul.button-group.pair li.first input[type=submit],
+ul.button-group.pair li.first input[type="button"],
+ul.button-group.pair li.first input[type=reset],
+ul.button-group.pair li.first button,
+ul.button-group.pair li.first .button {
+  border-right-width: 1px; }

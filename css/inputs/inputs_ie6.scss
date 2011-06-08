@@ -1,0 +1,16 @@
+/* 
+-----------------------------------------------
+Inputs
+Nice base styles for form elements
+v0.3
+----------------------------------------------- */
+
+@import "inputs/base";
+
+@import "inputs/textfields";
+
+@include button-base($ie6-support: true);
+
+@import "inputs/groups";
+@import "inputs/icons";
+@import "inputs/submit-icons";
