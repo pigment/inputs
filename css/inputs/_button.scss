@@ -1,0 +1,10 @@
+@mixin button($style, $colour) {
+  @if($style == 'plain') {
+    
+  }
+  
+  @if(style == 'glossy') {
+    
+    $border: adjust-color($base-color, $saturation: 9%, $lightness: -14%);
+  }
+}

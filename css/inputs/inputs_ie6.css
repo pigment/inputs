@@ -13,7 +13,6 @@ input[type=text],
 input,
 textarea {
   font-size: 13px;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
   height: 22px;
   /* Avoid shorthand for padding - IE bug: http://prax.is/misc/ie8-bug-css-padding-input-element.html */
   padding: 4px;
@@ -52,10 +51,6 @@ input[type=checkbox] {
 .lock-y textarea {
   height: 100%; }
 
-/* 
------------------------------------------------
-Buttons
------------------------------------------------ */
 label, input[type="image"] {
   cursor: pointer; }
 
@@ -63,50 +58,48 @@ input::-moz-focus-inner, button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* Remove button padding in FF */
 .button, button {
   cursor: pointer;
   overflow: visible;
   display: inline-block;
   width: auto;
-  height: 24px;
-  padding: 3px 1.5em;
-  line-height: 24px;
-  font-weight: bold;
-  font-size: 14px;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   text-decoration: none;
   text-align: center;
-  text-shadow: 0 1px 0 white;
-  color: #444;
-  background: #f1f1f1;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6), color-stop(5%, #fcfcfc));
-  background: -webkit-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: -moz-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: -o-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: -ms-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e6e6e6');
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  border: 1px solid #aaaaaa; }
+  height: 29.5px;
+  padding: 0 1em;
+  line-height: 29.5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  border: 1px solid #cccccc;
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(3.33%, #fcfcfc), color-stop(100%, #e8e8e8));
+  background: -webkit-linear-gradient(top, white 0%, #fcfcfc 1px, #e8e8e8 100%);
+  background: -moz-linear-gradient(top, white 0%, #fcfcfc 1px, #e8e8e8 100%);
+  background: -o-linear-gradient(top, white 0%, #fcfcfc 1px, #e8e8e8 100%);
+  background: -ms-linear-gradient(top, white 0%, #fcfcfc 1px, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcfc", endColorstr="#e8e8e8",GradientType=0 );
+  background: linear-gradient(top, white 0%, #fcfcfc 1px, #e8e8e8 100%);
+  border-color: #bcbcbc;
+  color: #444444;
+  text-shadow: 0 1px 0 white; }
+  .button:visited, button:visited {
+    color: #444444; }
   .button:hover, button:hover {
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(3.33%, white), color-stop(100%, #ededed));
+    background: -webkit-linear-gradient(top, white 0%, white 1px, #ededed 100%);
+    background: -moz-linear-gradient(top, white 0%, white 1px, #ededed 100%);
+    background: -o-linear-gradient(top, white 0%, white 1px, #ededed 100%);
+    background: -ms-linear-gradient(top, white 0%, white 1px, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="white", endColorstr="#ededed",GradientType=0 );
+    background: linear-gradient(top, white 0%, white 1px, #ededed 100%); }
+  .button.disabled, .button:active, button.disabled, button:active {
     background: #f7f7f7;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
-    background: -webkit-linear-gradient(top, white, #efefef);
-    background: -moz-linear-gradient(top, white, #efefef);
-    background: -o-linear-gradient(top, white, #efefef);
-    background: -ms-linear-gradient(top, white, #efefef);
-    background: linear-gradient(top, white, #efefef);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#efefef');
-    color: #222; }
-  .button:active, .button.disabled, button:active, button.disabled {
-    filter: none;
-    background: #f9f9f9;
-    border-color: #ccc;
-    color: #b0b0b0;
+    color: #a8a8a8;
     text-shadow: none; }
+  .button.disabled, button.disabled {
+    cursor: default; }
   .button.small, button.small {
     height: 16px;
     padding: 2px 1em;
@@ -114,21 +107,16 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     font-size: 11px;
     line-height: 16px;
     *line-height: 14px;
-    font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif; }
-  * html .button:visited, * html button:visited {
-    color: #444; }
-
-a.button:visited {
-  color: #444; }
+    font-family: "Lucida Grande", Verdana, Tahoma, Ubuntu, sans-serif; }
 
 input.button,
 button {
-  height: 32px; }
+  height: 31.5px;
+  line-height: auto; }
 
 input.button.small,
 button.small {
-  height: 22px;
-  *line-height: 12px; }
+  height: 22px; }
 
 /* 
 -----------------------------------------------
@@ -160,25 +148,19 @@ ul.button-group {
   ul.button-group li.first input[type=reset],
   ul.button-group li.first button,
   ul.button-group li.first .button {
-    -moz-border-radius-topleft: 2px;
-    -moz-border-radius-bottomleft: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -webkit-border-top-left-radius: 2px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
     border-right-width: 0; }
   ul.button-group li.last input[type=submit],
   ul.button-group li.last input[type="button"],
   ul.button-group li.last input[type=reset],
   ul.button-group li.last button,
   ul.button-group li.last .button {
-    -moz-border-radius-topright: 2px;
-    -moz-border-radius-bottomright: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-top-right-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
     border-left-width: 0; }
+    ul.button-group li.last input[type=submit]:after,
+    ul.button-group li.last input[type="button"]:after,
+    ul.button-group li.last input[type=reset]:after,
+    ul.button-group li.last button:after,
+    ul.button-group li.last .button:after {
+      display: none; }
 
 /* Paired buttons - for groups with only 2 buttons */
 ul.button-group.pair li.first input[type=submit],
@@ -192,8 +174,9 @@ ul.button-group.pair li.first .button {
 -----------------------------------------------
 Icons
 ----------------------------------------------- */
-button i.icon,
-.button i.icon {
+button.icon:before,
+.button.icon:before {
+  content: '';
   display: inline-block;
   *position: relative;
   *left: -8px;
@@ -202,48 +185,42 @@ button i.icon,
   margin: 0 5px 0 -8px;
   width: 16px;
   height: 16px;
-  background: transparent url(/images/inputs-icons.png) no-repeat; }
+  background: transparent url(../images/inputs-icons.png) no-repeat; }
 
-/* FF hack */
-button i.icon, x:-moz-any-link, x:default {
-  position: relative;
-  top: 1px;
-  margin-top: -2px; }
-
-button.add i.icon, .button.add i.icon {
+button.add:before, .button.add:before {
   background-position: -8px -8px; }
-button.add:active i.icon, .button.add:active i.icon {
+button.add:active:before, .button.add:active:before {
   background-position: -8px -72px; }
 
-.remove i.icon {
+button.remove:before, .button.remove:before {
   background-position: -8px -104px; }
-.remove:active i.icon {
+button.remove:active:before, .button.remove:active:before {
   background-position: -8px -168px; }
 
-.confirm i.icon {
+button.confirm:before, .button.confirm:before {
   background-position: -8px -200px; }
-.confirm:active i.icon {
+button.confirm:active:before, .button.confirm:active:before {
   background-position: -8px -264px; }
 
-.download i.icon {
+button.download:before, .button.download:before {
   background-position: -8px -296px; }
-.download:active i.icon {
+button.download:active:before, .button.download:active:before {
   background-position: -8px -360px; }
 
-.upload i.icon {
+button.upload:before, .button.upload:before {
   background-position: -8px -392px; }
-.upload:active i.icon {
+button.upload:active:before, .button.upload:active:before {
   background-position: -8px -456px; }
 
 .multiplebgs input[type=submit].icon,
 .multiplebgs input[type=button].icon {
-  padding-left: 23px;
-  background: url(/images/inputs-icons.png) no-repeat, url(/images/button.svg);
-  background: url(/images/inputs-icons.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6), color-stop(5%, #fcfcfc));
-  background: url(/images/inputs-icons.png) no-repeat, -webkit-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: url(/images/inputs-icons.png) no-repeat, -moz-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: url(/images/inputs-icons.png) no-repeat, -o-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: url(/images/inputs-icons.png) no-repeat, linear-gradient(top, white, #fcfcfc 1px, #e6e6e6); }
+  padding-left: 24px;
+  background: url(../images/inputs-icons.png) no-repeat, url(../images/button.svg);
+  background: url(../images/inputs-icons.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6), color-stop(5%, #fcfcfc));
+  background: url(../images/inputs-icons.png) no-repeat, -webkit-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
+  background: url(../images/inputs-icons.png) no-repeat, -moz-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
+  background: url(../images/inputs-icons.png) no-repeat, -o-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
+  background: url(../images/inputs-icons.png) no-repeat, linear-gradient(top, white, #fcfcfc 1px, #e6e6e6); }
 
 /* + Add + */
 .multiplebgs input[type=submit].icon.add,
@@ -253,7 +230,7 @@ button.add:active i.icon, .button.add:active i.icon {
 
 .multiplebgs input[type=submit].small.add:active,
 .multiplebgs input[type=button].small.add:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -70px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -70px; }
 
 /* - Remove - */
 input[type=submit].remove:hover,
@@ -278,7 +255,7 @@ button.remove:active,
 .multiplebgs input[type=submit].icon.small.remove:active,
 .multiplebgs input[type=button].icon.small.remove:active,
 .multiplebgs input[type=reset].icon.small.remove:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -166px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -166px; }
 
 /* √ Confirm √ */
 .multiplebgs input[type=submit].icon.small.confirm,
@@ -287,7 +264,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.confirm:active,
 .multiplebgs input[type=button].icon.small.confirm:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -262px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -262px; }
 
 /* ↓ Download ↓ */
 .multiplebgs input[type=submit].icon.small.download,
@@ -296,7 +273,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.download:active,
 .multiplebgs input[type=button].icon.small.download:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -358px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -358px; }
 
 /* ↑ Upload ↑ */
 .multiplebgs input[type=submit].icon.small.upload,
@@ -305,7 +282,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.upload:active,
 .multiplebgs input[type=button].icon.small.upload:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -454px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -454px; }
 
 /* ↑ Like ↑ */
 .multiplebgs input[type=submit].icon.small.like,
@@ -314,7 +291,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.like:active,
 .multiplebgs input[type=button].icon.small.like:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -550px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -550px; }
 
 /* ↓ Dislike ↓ */
 .multiplebgs input[type=submit].icon.small.dislike,
@@ -323,4 +300,4 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.dislike:active,
 .multiplebgs input[type=button].icon.small.dislike:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -646px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -646px; }

@@ -6,11 +6,9 @@ v0.3
 ----------------------------------------------- */
 
 @import "inputs/base";
+@include button-base(#4399e3); // Colours to experiment with: #77b300, E5FFB3, FF9E9E 4399e3 ad141e
 
 @import "inputs/textfields";
-
-@include button-base;
-
 @import "inputs/groups";
 @import "inputs/icons";
 @import "inputs/submit-icons";

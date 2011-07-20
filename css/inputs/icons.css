@@ -2,8 +2,9 @@
 -----------------------------------------------
 Icons
 ----------------------------------------------- */
-button i.icon,
-.button i.icon {
+button.icon:before,
+.button.icon:before {
+  content: '';
   display: inline-block;
   *position: relative;
   *left: -8px;
@@ -12,35 +13,29 @@ button i.icon,
   margin: 0 5px 0 -8px;
   width: 16px;
   height: 16px;
-  background: transparent url(/images/inputs-icons.png) no-repeat; }
+  background: transparent url(../images/inputs-icons.png) no-repeat; }
 
-/* FF hack */
-button i.icon, x:-moz-any-link, x:default {
-  position: relative;
-  top: 1px;
-  margin-top: -2px; }
-
-button.add i.icon, .button.add i.icon {
+button.add:before, .button.add:before {
   background-position: -8px -8px; }
-button.add:active i.icon, .button.add:active i.icon {
+button.add:active:before, .button.add:active:before {
   background-position: -8px -72px; }
 
-.remove i.icon {
+button.remove:before, .button.remove:before {
   background-position: -8px -104px; }
-.remove:active i.icon {
+button.remove:active:before, .button.remove:active:before {
   background-position: -8px -168px; }
 
-.confirm i.icon {
+button.confirm:before, .button.confirm:before {
   background-position: -8px -200px; }
-.confirm:active i.icon {
+button.confirm:active:before, .button.confirm:active:before {
   background-position: -8px -264px; }
 
-.download i.icon {
+button.download:before, .button.download:before {
   background-position: -8px -296px; }
-.download:active i.icon {
+button.download:active:before, .button.download:active:before {
   background-position: -8px -360px; }
 
-.upload i.icon {
+button.upload:before, .button.upload:before {
   background-position: -8px -392px; }
-.upload:active i.icon {
+button.upload:active:before, .button.upload:active:before {
   background-position: -8px -456px; }

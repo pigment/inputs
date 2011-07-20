@@ -7,9 +7,7 @@ Text fields
 input[type=text], /* Prevents IE input (button) styling */
 input,
 textarea {
-  font-size: 13px;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  
+  font-size: 13px;  
   height: 22px;
   
   /* Avoid shorthand for padding - IE bug: http://prax.is/misc/ie8-bug-css-padding-input-element.html */

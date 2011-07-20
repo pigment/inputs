@@ -37,12 +37,6 @@ ul.button-group {
     input[type=reset],
     button,
     .button {
-      -moz-border-radius-topleft:         $border_radius;
-      -moz-border-radius-bottomleft:      $border_radius;
-      -webkit-border-bottom-left-radius:  $border_radius;
-      -webkit-border-top-left-radius:     $border_radius;
-      border-top-left-radius:             $border_radius;
-      border-bottom-left-radius:          $border_radius;
       border-right-width: 0;
     }
   }
@@ -53,13 +47,11 @@ ul.button-group {
     input[type=reset],
     button,
     .button {
-      -moz-border-radius-topright:        $border_radius;
-      -moz-border-radius-bottomright:     $border_radius;
-      -webkit-border-bottom-right-radius: $border_radius;
-      -webkit-border-top-right-radius:    $border_radius;
-      border-top-right-radius:            $border_radius;
-      border-bottom-right-radius:         $border_radius;
       border-left-width: 0;
+      
+      &:after {
+        display: none;
+      }
     }
   }
 }

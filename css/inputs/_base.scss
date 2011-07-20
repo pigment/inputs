@@ -1,94 +1,64 @@
-$border_radius: 2px;
-$border_width: 1px;
-$button_height: 30px;
+@mixin button-base($base-color: #fcfcfc, $font-size: 14px, $border-width: 1px, $ie6-support: false) {
 
-@mixin button-base($ie6-support: false) {
-/* 
------------------------------------------------
-Buttons
------------------------------------------------ */
-  
   label, input[type="image"] { cursor: pointer; }
-  input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; } /* Remove button padding in FF */
+  input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; } // Remove button padding in FF
   
   .button, button {
     cursor: pointer;
     overflow: visible;
     display: inline-block;
     width: auto;
-    height: 24px;
-    padding: 3px 1.5em;
-
-    line-height: 24px;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-align: center;
-    text-shadow: 0 1px 0 rgba(255,255,255, 1);
-    color: #444;
-
-    @include gradient(#fcfcfc, #e6e6e6, #ffffff);
     
-    -webkit-border-radius:  $border_radius;
-    -moz-border-radius:     $border_radius;
-    border-radius:          $border_radius;
-    border: $border_width solid #aaa;
+    height: (($font-size * 2.25) - ($border-width * 2));
+    padding: 0 1em;
 
-    &:hover {
-      @include gradient(#ffffff, #efefef);
-      color: #222;
-    }
-
-    &:active, &.disabled {
-      filter: none;
-      background: #f9f9f9;
-      border-color: #ccc;
-      color: #b0b0b0;
-      text-shadow: none;
-    }
+    line-height: (($font-size * 2.25) - ($border-width * 2));
+    font-size: $font-size;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    border: $border-width solid #ccc;
+    
+    @include button($base-color);
     
     &.small {
       height: 16px;
       padding: 2px 1em;
-
+      
       font-weight: normal;
       font-size: 11px;
       line-height: 16px;
       *line-height: 14px;
-      font-family: "Lucida Grande", Verdana, Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-family: "Lucida Grande", Verdana, Tahoma, Ubuntu, sans-serif;
     }
     
-    @if($ie6-support) {
-      * html &:visited {
-        color: #444;
-      }
-    }
-  }
-  
-  a.button:visited {
-    color: #444;
   }
   
   @if($ie6-support) {
     input.button,
     button {
-      height: 32px;
+      height: $font-size * 2.25;
+      line-height: auto;
     }
     
     input.button.small,
     button.small {
       height: 22px;
-      *line-height: 12px;
     }
   }
   @else {
     input[type=submit],
     input[type="button"],
+    input[type=reset] {
+      @extend .button;
+    }
+    input[type=submit],
+    input[type="button"],
     input[type=reset],
     button {
-      @extend .button;
-      height: 32px;
+      height: $font-size * 2.25;
+      line-height: normal;
     }
     
     input.small[type=submit],
@@ -96,34 +66,109 @@ Buttons
     input.small[type=reset],
     button.small {
       height: 22px;
-      *line-height: 12px;
     }
   }
   
 }
 
-@mixin gradient($top, $bottom, $gloss: 0) {
-  
-  background: mix($top, $bottom);
-  
-  @if $gloss != 0 {
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6), color-stop(5%, #fcfcfc));
+@mixin button($base-color) {
+  @if($base-color) {
+    $bottom: adjust-color($base-color, $lightness: -8%);
+    $gloss: adjust-color($base-color, $lightness: 10%);
+    $border: adjust-color($base-color, $saturation: -38%, $lightness: -25%);
+    $color: adjust-color($base-color, $lightness: -72%);
+    $text-shadow: 0 1px 0 adjust-color($base-color, $lightness: 5%);
 
-    background: -webkit-linear-gradient(  top, $gloss, $top 1px, $bottom);
-    background: -moz-linear-gradient(     top, $gloss, $top 1px, $bottom);
-    background: -o-linear-gradient(       top, $gloss, $top 1px, $bottom);
-    background: -ms-linear-gradient(      top, $gloss, $top 1px, $bottom);
-    background: linear-gradient(          top, $gloss, $top 1px, $bottom);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top}', endColorstr='#{$bottom}');
+    @if(lightness($base-color) < 80%) {
+      $gloss: adjust-color($base-color, $saturation: -40%, $lightness: 22%);
+      $border: adjust-color($base-color, $saturation: -4%, $lightness: -15%);
+      $color: #fff;
+      $text-shadow: 0 -1px 0 $border;
+    }
+
+    @include button-gradient($base-color, $bottom, $gloss);
+    border-color: $border;
+    color: $color;
+    text-shadow: $text-shadow;
+
+    &:visited {
+      color: $color;
+    }
+
+    &:hover {
+      $base-color-hover: adjust-color($base-color, $lightness: 2%);
+      $bottom-hover: adjust-color($bottom, $lightness: 2%);
+      $gloss-hover: adjust-color($base-color-hover, $saturation: -30%, $lightness: 20%);
+      @include button-gradient($base-color-hover, $bottom-hover, $gloss-hover);
+    }
+
+    &.disabled, &:active {
+      background: adjust-color($base-color, $lightness: -2%);
+      color: adjust-color($base-color, $saturation: -50%, $lightness: -33%);
+      text-shadow: none;
+
+      @if(lightness($base-color) < 80%) {
+        box-shadow: inset 0 1px 0 darken($border, 0.25%);
+        background: adjust-color($base-color, $hue: 6%, $saturation: -19%, $lightness: -5%);
+        color: hsl($hue: hue($base-color), $saturation: 50%, $lightness: lightness(adjust-color($base-color, $lightness: 13%)));
+        text-shadow: 0 -1px 0 adjust-color($base-color, $saturation: -4%, $lightness: -15%);
+      }
+    }
+    &.disabled {
+      cursor: default;
+    }
+  }
+}
+
+@mixin button-gradient($top, $bottom, $gloss: false) {
+  background: mix($top, $bottom);
+  @if($gloss) {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $gloss), color-stop(3.33%,$top), color-stop(100%,$bottom));
+    background: -webkit-linear-gradient(top, $gloss 0%, $top 1px, $bottom 100%);
+    background: -moz-linear-gradient(   top, $gloss 0%, $top 1px, $bottom 100%);
+    background: -o-linear-gradient(     top, $gloss 0%, $top 1px, $bottom 100%);
+    background: -ms-linear-gradient(    top, $gloss 0%, $top 1px, $bottom 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#{$top}", endColorstr="#{$bottom}",GradientType=0 );
+    background: linear-gradient(        top, $gloss 0%, $top 1px, $bottom 100%);
   }
   @else {
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6));
-
-    background: -webkit-linear-gradient(  top, $top, $bottom);
-    background: -moz-linear-gradient(     top, $top, $bottom);
-    background: -o-linear-gradient(       top, $top, $bottom);
-    background: -ms-linear-gradient(      top, $top, $bottom);
-    background: linear-gradient(          top, $top, $bottom);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top}', endColorstr='#{$bottom}');
+    background: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom));
+    background: -webkit-linear-gradient(top, $top, $bottom);
+    background: -moz-linear-gradient(   top, $top, $bottom);
+    background: -o-linear-gradient(     top, $top, $bottom);
+    background: -ms-linear-gradient(    top, $top, $bottom);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#{$top}", endColorstr="#{$bottom}",GradientType=0 );
+    background: linear-gradient(        top, $top, $bottom);
   }
+}
+
+// Taken from Thoughtbot's bourbon https://github.com/thoughtbot/bourbon
+@mixin border-radius ($radii) {
+  -webkit-border-radius:  $radii;
+  -moz-border-radius:     $radii;
+  -ms-border-radius:      $radii;
+  -o-border-radius:       $radii;
+  border-radius:          $radii;
+}
+
+@mixin box-shadow ($shadow-1,
+  $shadow-2: false, $shadow-3: false,
+  $shadow-4: false, $shadow-5: false,
+  $shadow-6: false, $shadow-7: false,
+  $shadow-8: false, $shadow-9: false)
+  {
+    $full: $shadow-1;
+    $shadows: $shadow-2, $shadow-3, $shadow-4, $shadow-5,
+              $shadow-6, $shadow-7, $shadow-8, $shadow-9;
+
+    @each $shadow in $shadows {
+      @if $shadow {
+        $full: $full, $shadow;
+      }
+    }
+    -webkit-box-shadow: $full;
+    -moz-box-shadow:    $full;
+    -ms-box-shadow:     $full;
+    -o-box-shadow:      $full;
+    box-shadow:         $full;
 }

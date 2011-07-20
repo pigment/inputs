@@ -1,13 +1,13 @@
 @charset "UTF-8";
 .multiplebgs input[type=submit].icon,
 .multiplebgs input[type=button].icon {
-  padding-left: 23px;
-  background: url(/images/inputs-icons.png) no-repeat, url(/images/button.svg);
-  background: url(/images/inputs-icons.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6), color-stop(5%, #fcfcfc));
-  background: url(/images/inputs-icons.png) no-repeat, -webkit-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: url(/images/inputs-icons.png) no-repeat, -moz-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: url(/images/inputs-icons.png) no-repeat, -o-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
-  background: url(/images/inputs-icons.png) no-repeat, linear-gradient(top, white, #fcfcfc 1px, #e6e6e6); }
+  padding-left: 24px;
+  background: url(../images/inputs-icons.png) no-repeat, url(../images/button.svg);
+  background: url(../images/inputs-icons.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6), color-stop(5%, #fcfcfc));
+  background: url(../images/inputs-icons.png) no-repeat, -webkit-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
+  background: url(../images/inputs-icons.png) no-repeat, -moz-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
+  background: url(../images/inputs-icons.png) no-repeat, -o-linear-gradient(top, white, #fcfcfc 1px, #e6e6e6);
+  background: url(../images/inputs-icons.png) no-repeat, linear-gradient(top, white, #fcfcfc 1px, #e6e6e6); }
 
 /* + Add + */
 .multiplebgs input[type=submit].icon.add,
@@ -17,7 +17,7 @@
 
 .multiplebgs input[type=submit].small.add:active,
 .multiplebgs input[type=button].small.add:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -70px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -70px; }
 
 /* - Remove - */
 input[type=submit].remove:hover,
@@ -42,7 +42,7 @@ button.remove:active,
 .multiplebgs input[type=submit].icon.small.remove:active,
 .multiplebgs input[type=button].icon.small.remove:active,
 .multiplebgs input[type=reset].icon.small.remove:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -166px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -166px; }
 
 /* √ Confirm √ */
 .multiplebgs input[type=submit].icon.small.confirm,
@@ -51,7 +51,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.confirm:active,
 .multiplebgs input[type=button].icon.small.confirm:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -262px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -262px; }
 
 /* ↓ Download ↓ */
 .multiplebgs input[type=submit].icon.small.download,
@@ -60,7 +60,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.download:active,
 .multiplebgs input[type=button].icon.small.download:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -358px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -358px; }
 
 /* ↑ Upload ↑ */
 .multiplebgs input[type=submit].icon.small.upload,
@@ -69,7 +69,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.upload:active,
 .multiplebgs input[type=button].icon.small.upload:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -454px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -454px; }
 
 /* ↑ Like ↑ */
 .multiplebgs input[type=submit].icon.small.like,
@@ -78,7 +78,7 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.like:active,
 .multiplebgs input[type=button].icon.small.like:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -550px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -550px; }
 
 /* ↓ Dislike ↓ */
 .multiplebgs input[type=submit].icon.small.dislike,
@@ -87,4 +87,4 @@ button.remove:active,
 
 .multiplebgs input[type=submit].icon.small.dislike:active,
 .multiplebgs input[type=button].icon.small.dislike:active {
-  background: #f9f9f9 url(/images/inputs-icons.png) no-repeat -5px -646px; }
+  background: #f9f9f9 url(../images/inputs-icons.png) no-repeat -5px -646px; }
